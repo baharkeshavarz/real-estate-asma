@@ -24,7 +24,7 @@
   }
 
   .base-medium {
-    @apply text-[18px] font-medium leading-[25.2px];
+    @apply text-[15px] font-medium leading-[25.2px];
   }
 
   .base-semibold {
