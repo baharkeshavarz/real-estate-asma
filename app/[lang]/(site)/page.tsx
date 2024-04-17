@@ -2,6 +2,7 @@ import React from "react"
 import { Metadata } from "next"
 import { getDictionary } from "@/lib/locale"
 import { LocalProps } from "@/types"
+import Search from "@/components/layouts/Search"
 
 export const metadata: Metadata = {
   title: "Al Asma Home",
@@ -13,7 +14,7 @@ const Home = async ({ params: { lang } }: LocalProps) => {
   return (
     <>
       <div className="h-screen">
-        main page
+         <Search/>
       </div>
     </>
   )

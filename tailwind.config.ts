@@ -18,13 +18,19 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
+          100: "#faf7de",
+          300: "#fff9c7",
           500: "#ffeb3c",
+          800: "#f5dc05",
         },
         secondary: {
           100: "#f7f5f5",
           200: "#e0dede",
           800: "#5e636a",
         },
+        ternary: {
+          500: "#02264d"
+        }
       },
       boxShadow: {
         "light-100":

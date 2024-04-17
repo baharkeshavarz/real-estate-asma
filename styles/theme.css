@@ -4,7 +4,7 @@
 
 @layer utilities {
   .h1-bold {
-    @apply text-[30px] font-bold leading-[42px] tracking-tighter;
+    @apply text-[35px] font-bold leading-[42px] tracking-tighter;
   }
 
   .h2-bold {
@@ -77,10 +77,6 @@
 
   .subtle-regular {
     @apply text-[10px] font-normal leading-[13px];
-  }
-
-  .placeholder {
-    @apply text-light-400 dark:text-light-500;
   }
 
   .shadow-light100_dark100 {
