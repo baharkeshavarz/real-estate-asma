@@ -5,7 +5,7 @@ import { UserAccess } from "./UserAccess"
 
 const NavBar = () => {
   return (
-    <div className="flex-between h-16 bg-secondary-100 px-5">
+    <div className="flex-between h-16 bg-white px-5">
       <Logo />
       <div className="flex-center">
         <Menus />

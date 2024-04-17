@@ -22,6 +22,7 @@ const config: Config = {
           300: "#fff9c7",
           500: "#ffeb3c",
           800: "#f5dc05",
+          900: "#ffcd05",
         },
         secondary: {
           100: "#f7f5f5",
