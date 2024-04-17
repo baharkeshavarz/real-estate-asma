@@ -7,6 +7,7 @@ const getCountriesCode = () => {
 const getCountriesList = () => {
   return axios.get("/api/v1/common/getCountryList")
 }
+
 const getProvinceList = (id: any) => {
   return axios.get("/api/v1/common/getProvinceList", {
     params: {

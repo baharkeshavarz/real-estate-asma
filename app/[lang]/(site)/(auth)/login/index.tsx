@@ -4,7 +4,7 @@ import { TranslateProps } from "@/types"
 
 const Login = ({ t }: TranslateProps) => {
   return (
-   "login"
+   <div className="background-light800_dark400">Login Page </div>
   )
 }
 

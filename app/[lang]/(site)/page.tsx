@@ -2,18 +2,21 @@ import React from "react"
 import { Metadata } from "next"
 import { getDictionary } from "@/lib/locale"
 import { LocalProps } from "@/types"
-import Login from "."
 
 export const metadata: Metadata = {
-  title: "Al Asma Login",
+  title: "Al Asma Home",
   description: ""
 }
 
-const SignIn = async ({ params: { lang } }: LocalProps) => {
+const Home = async ({ params: { lang } }: LocalProps) => {
   const { pages } = await getDictionary(lang)
   return (
-    <Login t={pages} />
+    <>
+      <div className="h-screen">
+        main page
+      </div>
+    </>
   )
 }
 
-export default SignIn
+export default Home
