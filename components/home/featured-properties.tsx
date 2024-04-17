@@ -1,48 +1,69 @@
 import React from "react"
-import Tooltip from "../common/ui/tooltip"
+
+import FeaturedTitle from "./featured-title"
+import PropertyCard from "./property-card"
 
 const FeaturedProperties = () => {
+  const houses = [
+    {
+      id: 1,
+      title: "Villa Belo a large superior luxury villa",
+      price: "7500",
+      currency: "$",
+      beds: 4,
+      baths: 6,
+      sqft: 1150,
+      img: "/assets/images/properties/property-1.jpg",
+    },
+    {
+      id: 2,
+      title: "Dream House",
+      price: "98000",
+      currency: "$",
+      beds: 5,
+      baths: 3,
+      sqft: 1150,
+      img: "/assets/images/properties/property-4.webp",
+    },
+    {
+      id: 3,
+      title: "Dream House in North",
+      price: "150000",
+      currency: "$",
+      beds: 6,
+      baths: 4,
+      sqft: 1150,
+      img: "/assets/images/properties/property-3.jpg",
+    },
+    {
+      id: 4,
+      title: "10765 Hillshire Ave, Baton Rouge, LA 70810, USA",
+      price: "1600",
+      currency: "$",
+      beds: 10,
+      baths: 6,
+      sqft: 500,
+      img: "/assets/images/properties/property-1.jpg",
+    },
+    {
+      id: 5,
+      title: "Hillshire Ave, Baton Rouge, LA 70810, USA",
+      price: "5000",
+      currency: "$",
+      beds: 1,
+      baths: 3,
+      sqft: 6500,
+      img: "/assets/images/properties/property-4.webp",
+    },
+  ]
   return (
-    <div className="flex-center flex-col">
-      <div className="flex-center flex-col text-center">
-        <h1 className="h1-bold pb-3 pt-9">Featured properties</h1>
-        <h4 className="h4-bold py-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
-          lobortis justo
-        </h4>
+    <div className="flex-center flex-col py-5">
+      <FeaturedTitle />
+      <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-5">
+        {houses.map(property => (
+          <PropertyCard key={property.id} property={property} />
+        ))}
       </div>
-
-      <ul className="flex-center gap-x-5 body-regular py-5">
-        <li>
-          <Tooltip message="8 Property">
-            <span className="p-2 bg-white shadow-md cursor-pointer hover:text-primary-800">Houses</span>
-          </Tooltip>
-        </li>
-
-        <li>
-          <Tooltip message="6 Property">
-          <span className="p-2 bg-white shadow-md cursor-pointer hover:text-primary-800">Smart Home</span>
-          </Tooltip>
-        </li>
-
-        <li>
-          <Tooltip message="5 Property">
-          <span className="p-2 bg-white shadow-md cursor-pointer hover:text-primary-800">Apartments</span>
-          </Tooltip>
-        </li>
-
-        <li>
-          <Tooltip message="5 Property">
-          <span className="p-2 bg-white shadow-md cursor-pointer hover:text-primary-800">Office</span>
-          </Tooltip>
-        </li>
-
-        <li>
-          <Tooltip message="5 Property">
-          <span className="p-2 bg-white shadow-md cursor-pointer hover:text-primary-800">Villa</span>
-          </Tooltip>
-        </li>
-      </ul>
     </div>
   )
 }

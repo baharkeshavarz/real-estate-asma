@@ -14,10 +14,8 @@ const Home = async ({ params: { lang } }: LocalProps) => {
   const { pages } = await getDictionary(lang)
   return (
     <>
-      <div className="h-screen">
-         <Search/>
-         <FeaturedProperties/>
-      </div>
+      <Search />
+      <FeaturedProperties />
     </>
   )
 }

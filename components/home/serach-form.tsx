@@ -16,7 +16,7 @@ const SearchForm = () => {
 
       <div className="relative flex min-h-[56px] w-full items-center justify-center gap-1 rounded-xl bg-secondary-100 px-4">
         <HiOutlineHome size={18} className="text-primary-800" />
-        <select className="block w-full rounded-lg border border-gray-100 bg-gray-50 p-2.5 text-sm text-gray-500 focus:border-secondary-100 focus:ring-secondary-100">
+        <select className="rounded-lg border border-gray-100 bg-gray-50 p-2.5 text-sm text-gray-500 focus:border-secondary-100 focus:ring-secondary-100">
           <option selected>Choose a Category:</option>
           <option value="DE">Houses</option>
           <option value="US">Apartments</option>
