@@ -13,7 +13,7 @@ const NewsLetter = () => {
         />
         <button
           type="submit"
-          className="btn body-regular absolute right-0 rounded-full bg-primary-500 p-3 text-secondary-800 hover:bg-primary-800"
+          className="btn body-regular absolute right-0  rounded-full bg-primary-500 p-3 text-secondary-800 hover:bg-primary-800"
         >
           Subscribe
         </button>

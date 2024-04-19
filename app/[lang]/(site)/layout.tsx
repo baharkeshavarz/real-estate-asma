@@ -1,5 +1,5 @@
 import NavBar from "@/components/layouts/NavBar"
-import Footer from "@/components/layouts/Footer"
+import Footer from "@/components/layouts/footer/Footer"
 import { getDictionary } from "@/lib/locale"
 import { ChildrenLocalProps } from "@/types"
 
@@ -13,7 +13,7 @@ export default async function MainLayout({
     <main>
       <NavBar />
       <div className="mx-auto w-full">{children}</div>
-      <Footer/>
+      <Footer />
     </main>
   )
 }
