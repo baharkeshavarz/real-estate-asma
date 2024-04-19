@@ -5,41 +5,50 @@ const FeaturedTitle = () => {
   return (
     <div className="flex-center flex-col">
       <div className="flex-center flex-col text-center">
-        <h1 className="h1-bold pb-3 pt-9">Featured properties</h1>
-        <h4 className="h4-bold py-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
-          lobortis justo
+        <h1 className="h1-bold pb-2 pt-9">Discover the latest properties</h1>
+        <h4 className="h5-bold pb-2 text-slate-400">
+          A great plateform to buy, sell and rent your properties
         </h4>
       </div>
 
-      <ul className="flex-center gap-x-5 body-regular py-5">
+      <ul className="flex-center body-regular gap-x-5 py-5">
         <li>
           <Tooltip message="8 Property">
-            <span className="p-2 bg-white shadow-md cursor-pointer hover:text-primary-800">Houses</span>
+            <span className="cursor-pointer bg-white p-2 text-primary-900 shadow-md hover:text-primary-900">
+              Houses
+            </span>
           </Tooltip>
         </li>
 
         <li>
           <Tooltip message="6 Property">
-          <span className="p-2 bg-white shadow-md cursor-pointer hover:text-primary-800">Smart Home</span>
+            <span className="cursor-pointer bg-white p-2 shadow-md hover:text-primary-900">
+              Smart Home
+            </span>
           </Tooltip>
         </li>
 
         <li>
           <Tooltip message="5 Property">
-          <span className="p-2 bg-white shadow-md cursor-pointer hover:text-primary-800">Apartments</span>
+            <span className="cursor-pointer bg-white p-2 shadow-md hover:text-primary-900">
+              Apartments
+            </span>
           </Tooltip>
         </li>
 
         <li>
           <Tooltip message="5 Property">
-          <span className="p-2 bg-white shadow-md cursor-pointer hover:text-primary-800">Office</span>
+            <span className="cursor-pointer bg-white p-2 shadow-md hover:text-primary-900">
+              Office
+            </span>
           </Tooltip>
         </li>
 
         <li>
           <Tooltip message="5 Property">
-          <span className="p-2 bg-white shadow-md cursor-pointer hover:text-primary-800">Villa</span>
+            <span className="cursor-pointer bg-white p-2 shadow-md hover:text-primary-900">
+              Villa
+            </span>
           </Tooltip>
         </li>
       </ul>

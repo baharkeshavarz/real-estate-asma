@@ -7,7 +7,7 @@ import { SocialMedia } from "./SocialMedia"
 
 const Footer = () => {
   return (
-    <footer className="relative mt-24 bg-slate-900">
+    <footer className="relative mt-36 bg-slate-900">
       <div className="container relative">
         <div className="grid grid-cols-1">
           <div className="relative py-16">
