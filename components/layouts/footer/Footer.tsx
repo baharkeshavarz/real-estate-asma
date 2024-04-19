@@ -7,7 +7,7 @@ import { SocialMedia } from "./SocialMedia"
 
 const Footer = () => {
   return (
-    <footer className="relative mt-36 bg-slate-900">
+    <footer className="relative mt-44 bg-slate-900">
       <div className="container relative">
         <div className="grid grid-cols-1">
           <div className="relative py-16">
@@ -49,7 +49,7 @@ const Footer = () => {
                   <h5 className="font-semibold tracking-[1px] text-gray-100">
                     Company
                   </h5>
-                  <ul className="footer-list mt-6 list-none">
+                  <ul className="footer-list body-regular mt-6 list-none">
                     <li>
                       <Link
                         href="#"
@@ -97,7 +97,7 @@ const Footer = () => {
                   <h5 className="font-semibold tracking-[1px] text-gray-100">
                     Usefull Links
                   </h5>
-                  <ul className="footer-list mt-6 list-none">
+                  <ul className="footer-list body-regular mt-6 list-none">
                     <li>
                       <Link
                         href="#"
@@ -147,7 +147,7 @@ const Footer = () => {
                       <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                       <circle cx="12" cy="10" r="3"></circle>
                     </svg>
-                    <div className="">
+                    <div className="body-regular">
                       <h6 className="mb-2 text-gray-300">
                         C/54 Northwest Freeway, <br /> Suite 558, <br />{" "}
                         Houston, USA 485
@@ -162,7 +162,7 @@ const Footer = () => {
                     </div>
                   </div>
 
-                  <div className="mt-6 flex">
+                  <div className="body-regular mt-6 flex">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -188,7 +188,7 @@ const Footer = () => {
                     </div>
                   </div>
 
-                  <div className="mt-6 flex">
+                  <div className="body-regular mt-6 flex">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"

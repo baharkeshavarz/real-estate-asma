@@ -24,7 +24,7 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
       <h1 className="paragraph-regular min-h-[3.5rem] py-2">
         {property.title}
       </h1>
-      <h2 className="body-semibold py-1 text-black/80">
+      <h2 className="body-semibold py-1 text-primary-900">
         {property.price} {property.currency}
       </h2>
       <div className="flex-between pt-5">

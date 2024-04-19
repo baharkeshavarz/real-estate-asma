@@ -4,6 +4,7 @@ import { getDictionary } from "@/lib/locale"
 import { LocalProps } from "@/types"
 import Search from "@/components/layouts/Search"
 import FeaturedProperties from "@/components/home/featured-properties"
+import About from "@/components/home/about"
 
 export const metadata: Metadata = {
   title: "Al Asma Home",
@@ -16,6 +17,7 @@ const Home = async ({ params: { lang } }: LocalProps) => {
     <>
       <Search />
       <FeaturedProperties />
+      <About />
     </>
   )
 }

@@ -8,7 +8,7 @@ interface PropertyBadgeProps {
 const PropertyBadge = ({ title, icon: Icon }: PropertyBadgeProps) => {
   return (
     <div className="flex-start space-2 small-regular">
-      {Icon && <Icon size={24} className="text-primary-500"/>}
+      {Icon && <Icon size={24} className="text-secondary-800" />}
       <p className="px-1">{title}</p>
     </div>
   )

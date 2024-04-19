@@ -13,7 +13,7 @@ export const UserAccess = () => {
           Register
         </span>
       </div>
-      <button className="body-regular md:flex-center hidden h-12 w-80 rounded-md bg-primary-500 hover:text-secondary-800">
+      <button className="body-regular md:flex-center hidden h-12 w-80 rounded-md bg-primary-900 hover:text-secondary-800">
         Book Your Property
       </button>
     </>
