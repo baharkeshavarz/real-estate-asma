@@ -13,7 +13,7 @@ const FeaturedProperties = () => {
       beds: 4,
       baths: 6,
       sqft: 1150,
-      img: "/assets/images/properties/property-1.jpg",
+      img: "/assets/images/properties/property-1.jpg"
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ const FeaturedProperties = () => {
       beds: 5,
       baths: 3,
       sqft: 1150,
-      img: "/assets/images/properties/property-4.webp",
+      img: "/assets/images/properties/property-4.webp"
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ const FeaturedProperties = () => {
       beds: 6,
       baths: 4,
       sqft: 1150,
-      img: "/assets/images/properties/property-3.jpg",
+      img: "/assets/images/properties/property-3.jpg"
     },
     {
       id: 4,
@@ -43,7 +43,7 @@ const FeaturedProperties = () => {
       beds: 10,
       baths: 6,
       sqft: 500,
-      img: "/assets/images/properties/property-1.jpg",
+      img: "/assets/images/properties/property-1.jpg"
     },
     {
       id: 5,
@@ -53,13 +53,13 @@ const FeaturedProperties = () => {
       beds: 1,
       baths: 3,
       sqft: 6500,
-      img: "/assets/images/properties/property-4.webp",
-    },
+      img: "/assets/images/properties/property-4.webp"
+    }
   ]
   return (
     <div className="flex-center flex-col py-5">
       <FeaturedTitle />
-      <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-5">
+      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         {houses.map(property => (
           <PropertyCard key={property.id} property={property} />
         ))}

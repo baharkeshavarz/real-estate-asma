@@ -3,8 +3,8 @@ import Image from "next/image"
 import { PropertyItem } from "@/types/property"
 import PropertyBadge from "./property-badge"
 import { LiaBedSolid } from "react-icons/lia"
-import { LiaBathSolid } from "react-icons/lia";
-import { SlSizeActual } from "react-icons/sl";
+import { LiaBathSolid } from "react-icons/lia"
+import { SlSizeActual } from "react-icons/sl"
 
 interface PropertyCardProps {
   property: PropertyItem
@@ -13,18 +13,18 @@ interface PropertyCardProps {
 const PropertyCard = ({ property }: PropertyCardProps) => {
   return (
     <div className="flex flex-col rounded-md bg-white p-5 shadow-xl">
-      <div className="relative h-[200px] w-full p-5 overflow-hidden">
-        <Link href="/" className="p-2">
-          <Image
-            src={property.img}
-            alt={property.title}
-            fill
-            className="object-cover rounded-xl"
-            />
-        </Link>
+      <div className="relative mx-auto h-[200px] w-full overflow-hidden rounded-lg ">
+        <Image src={property.img} alt={property.title} fill />
+        <Link
+          href=""
+          className="absolute left-0 top-0 z-10 h-full w-full bg-black opacity-0 transition-all duration-300 hover:scale-110 hover:opacity-40 "
+        ></Link>
       </div>
-      <h1 className="paragraph-regular py-2 min-h-[3.5rem]">{property.title}</h1>
-      <h2 className="text-black/80 body-semibold py-1">
+
+      <h1 className="paragraph-regular min-h-[3.5rem] py-2">
+        {property.title}
+      </h1>
+      <h2 className="body-semibold py-1 text-black/80">
         {property.price} {property.currency}
       </h2>
       <div className="flex-between pt-5">
