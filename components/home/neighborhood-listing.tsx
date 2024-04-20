@@ -13,7 +13,10 @@ import { Navigation } from "swiper/modules"
 import NeighborhoodCard from "./neighborhood-card"
 
 const NeighborhoodListing = () => {
-  const isSmallDevice = useMediaQuery("only screen and (max-width : 768px)");
+  let isSmallDevice = false;
+  if (typeof window !== 'undefined') {
+    isSmallDevice = useMediaQuery("only screen and (max-width : 768px)");
+  }
 
   const neighborhoods = [
     {
