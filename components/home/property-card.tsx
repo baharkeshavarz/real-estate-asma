@@ -29,7 +29,11 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
       </h2>
       <div className="flex-between pt-5">
         <PropertyBadge icon={LiaBedSolid} title="Beds" value={property.beds} />
-        <PropertyBadge icon={LiaBathSolid} title="Baths" value={property.baths} />
+        <PropertyBadge
+          icon={LiaBathSolid}
+          title="Baths"
+          value={property.baths}
+        />
         <PropertyBadge icon={SlSizeActual} title="sqf" value={property.sqft} />
       </div>
       <div className="h-1 divide-y divide-gray-800"></div>

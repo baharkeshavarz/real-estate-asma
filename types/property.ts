@@ -8,3 +8,10 @@ export interface PropertyItem {
     sqft: number,
     img: string,
   }
+
+ export interface NeighborhoodItem {
+    id: number,
+    title: string,
+    count: number,
+    img: string,
+  }

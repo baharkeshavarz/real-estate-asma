@@ -4,7 +4,7 @@
 
 @layer utilities {
   .h1-bold {
-    @apply text-[35px] font-bold leading-[42px] tracking-tighter;
+    @apply text-[33px] font-bold leading-[42px] tracking-tighter;
   }
 
   .h2-bold {

@@ -26,5 +26,22 @@ body {
   }
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
 
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+.swiper-button-prev, .swiper-button-next {
+  background-color: #FFF;
+  color: #ffcd05 !important;
+  border-radius: 100%;
+  padding: 30px;
+  width: 200px;
+}
