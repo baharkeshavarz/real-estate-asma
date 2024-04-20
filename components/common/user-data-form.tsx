@@ -6,11 +6,11 @@ import { useState } from "react"
 import FormInput from "../shared/inputs/input"
 import { phoneRegex } from "@/lib/general"
 
-const SelectLead = () => {
-  const [leads, setLeads] = useState([])
+const UserDataForm = () => {
+  const [nationalities, setNationalities] = useState([])
 
   const leadSchema = z.object({
-    lead: z.string(),
+    nationality: z.string(),
     name: z.string().min(6, "must be at least 6 chars"),
     family: z.string().min(6, "must be at least 6 chars"),
     mobile: z.string().regex(phoneRegex, "Invalid Number!"),
@@ -24,12 +24,11 @@ const SelectLead = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
-    reset
+    formState: { errors }
   } = useForm<LeadFormData>({
     resolver: zodResolver(leadSchema),
     defaultValues: {
-      lead: "",
+      nationality: "",
       name: "",
       family: "",
       mobile: "",
@@ -42,25 +41,25 @@ const SelectLead = () => {
   }
 
   return (
-    <div>
+    <div className="sm:px-3">
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-2">
           <label htmlFor="lead" className="small-medium">
-            Lead
+            Nationality
           </label>
           <div className="mt-3">
             <Select
-              options={leads || []}
+              options={nationalities || []}
               onChange={() => {}}
               autoFocus={true}
-              placeholder="Choose Your Lead"
+              placeholder="Choose Your Nationality"
               className="small-medium"
             />
           </div>
 
-          {errors.lead && (
+          {errors.nationality && (
             <p className="flex-start py-2 text-[0.7rem] text-red-500">
-              {errors.lead.message}
+              {errors.nationality.message}
             </p>
           )}
         </div>
@@ -86,7 +85,7 @@ const SelectLead = () => {
         <div className="mt-2">
           <FormInput
             name="mobile"
-            label="Mobile"
+            label="Mobile Numnber"
             register={register}
             error={errors.mobile}
           />
@@ -95,7 +94,7 @@ const SelectLead = () => {
         <div className="mt-2">
           <FormInput
             name="email"
-            label="Email"
+            label="Email Address"
             register={register}
             error={errors.email}
           />
@@ -117,4 +116,4 @@ const SelectLead = () => {
   )
 }
 
-export default SelectLead
+export default UserDataForm

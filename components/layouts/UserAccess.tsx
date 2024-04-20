@@ -3,10 +3,11 @@
 import { useModalStore } from "@/store/modalStore"
 import { LiaUserLockSolid } from "react-icons/lia"
 import Modal from "../shared/modals/modal"
-import SelectLead from "../common/select-lead"
+import UserDataForm from "../common/user-data-form"
 
 export const UserAccess = () => {
-  const { isOpen, openModal, closeModal } = useModalStore()
+  const { openModal } = useModalStore();
+  
   return (
     <>
       <div className="sm:flex-center base-medium hidden min-w-[10rem] gap-x-1">
@@ -25,11 +26,6 @@ export const UserAccess = () => {
       >
         Book Your Property
       </button>
-      {isOpen && (
-        <Modal open={isOpen} setModalOpen={openModal} setModalClose={closeModal}>
-           <SelectLead/>
-        </Modal>
-      )}
     </>
   )
 }

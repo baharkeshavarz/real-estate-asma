@@ -5,6 +5,7 @@ import { Roboto, Noto_Sans_Arabic } from "next/font/google"
 import { ChildrenLocalProps } from "@/types"
 import ToastProvider from "@/providers/toast-provider"
 import EmotionCache from "@/providers/emotion-cache"
+import ModalProvider from "@/providers/modal-provider"
 
 // Handle the font family
 const roboto = Roboto({
@@ -45,6 +46,7 @@ export default async function RootLayout({
       >
         <main>
             <ToastProvider />
+            <ModalProvider />
             {lang === "ar" ? (
               <EmotionCache>{children}</EmotionCache>
             ) : (
