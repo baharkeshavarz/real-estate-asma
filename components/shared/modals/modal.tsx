@@ -11,7 +11,7 @@ type ModalProps = {
   width?: string
 }
 
-const defaultWidth = "sm:w-[600px] w-full"
+const defaultWidth = "sm:w-[550px] w-full"
 
 const Modal = ({
   children,

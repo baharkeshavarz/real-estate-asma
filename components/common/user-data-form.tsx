@@ -20,12 +20,12 @@ const UserDataForm = () => {
       .email("This is not a valid email.")
   })
 
-  type LeadFormData = z.infer<typeof leadSchema>
+  type UserInfoFormData = z.infer<typeof leadSchema>
   const {
     register,
     handleSubmit,
     formState: { errors }
-  } = useForm<LeadFormData>({
+  } = useForm<UserInfoFormData>({
     resolver: zodResolver(leadSchema),
     defaultValues: {
       nationality: "",
@@ -36,7 +36,7 @@ const UserDataForm = () => {
     }
   })
 
-  const onSubmit: SubmitHandler<LeadFormData> = async data => {
+  const onSubmit: SubmitHandler<UserInfoFormData> = async data => {
     console.log(data)
   }
 
@@ -44,8 +44,8 @@ const UserDataForm = () => {
     <div className="sm:px-3">
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-2">
-          <label htmlFor="lead" className="small-medium">
-            Nationality
+          <label htmlFor="lead" className="body-regular">
+            Your Nationality:
           </label>
           <div className="mt-3">
             <Select
@@ -53,7 +53,7 @@ const UserDataForm = () => {
               onChange={() => {}}
               autoFocus={true}
               placeholder="Choose Your Nationality"
-              className="small-medium"
+              className="body-regular"
             />
           </div>
 
@@ -64,47 +64,47 @@ const UserDataForm = () => {
           )}
         </div>
 
-        <div className="mt-2">
+        <div className="mt-4">
           <FormInput
             name="name"
-            label="Name"
+            label="Your Name:"
             register={register}
             error={errors.name}
           />
         </div>
 
-        <div className="mt-2">
+        <div className="mt-4">
           <FormInput
             name="family"
-            label="Family"
+            label="Your Family Name:"
             register={register}
             error={errors.family}
           />
         </div>
 
-        <div className="mt-2">
+        <div className="mt-4">
           <FormInput
             name="mobile"
-            label="Mobile Numnber"
+            label="Mobile Number:"
             register={register}
             error={errors.mobile}
           />
         </div>
 
-        <div className="mt-2">
+        <div className="mt-4">
           <FormInput
             name="email"
-            label="Email Address"
+            label="Email Address:"
             register={register}
             error={errors.email}
           />
         </div>
 
-        <div className="mt-2">
+        <div className="mt-4">
           <button
-            name="select-lead"
+            name="user-data"
             type="submit"
-            className="w-full cursor-pointer rounded-md bg-primary-500 px-4 py-2
+            className="w-full cursor-pointer rounded-md bg-primary-500 px-4 py-2 body-medium
                        tracking-wide text-gray-700 transition-colors duration-200 hover:bg-primary-900 hover:text-white
                      focus:bg-black focus:text-white focus:outline-none"
           >

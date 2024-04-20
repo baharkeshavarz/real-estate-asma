@@ -10,10 +10,10 @@ interface FormInputProps {
 
 const FormInput: React.FC<FormInputProps> = ({ label, name, type= "text", register, error }) => {
   return (
-    <div>
+    <>
       <label
         htmlFor={name}
-        className="small-medium"
+        className="body-regular"
       >
         {label}
       </label>
@@ -27,7 +27,7 @@ const FormInput: React.FC<FormInputProps> = ({ label, name, type= "text", regist
            {error ? error.message : ""}
         </p>
       )}
-    </div>
+    </>
   );
 };
 
