@@ -43,8 +43,7 @@ const config: Config = {
       }
     },
     backgroundImage: {
-      "auth-dark": "url('/assets/images/auth-dark.png)",
-      "auth-light": "url('/assets/images/auth-light.png)"
+      "main-slider": "url('/assets/images/bg-slider.jpg')",
     },
     screens: {
       sm: "576px",

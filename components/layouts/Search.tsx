@@ -10,9 +10,9 @@ const Search = () => {
   }
 
   return (
-    <div className="bg-ternary-500 p-6 text-white sm:p-0">
+    <div className="bg-main-slider p-6 text-white sm:p-0 min-h-[600px]">
       <div className="flex-center flex-col text-center">
-        <h1 className="h1-bold pb-3 pt-28">Choose your home for future life</h1>
+        <h1 className="h1-bold pb-3 pt-36">Choose your home for future life</h1>
         <h4 className="h4-bold py-2">
           Find a variety of properties that suit you very easily, forget all
           difficulties in finding a residence for you
