@@ -1,6 +1,7 @@
 "use client"
 
 import { Swiper, SwiperSlide } from "swiper/react"
+import { useMediaQuery } from "@uidotdev/usehooks";
 
 // Import Swiper styles
 import "swiper/css"
@@ -12,6 +13,8 @@ import { Navigation } from "swiper/modules"
 import NeighborhoodCard from "./neighborhood-card"
 
 const NeighborhoodListing = () => {
+  const isSmallDevice = useMediaQuery("only screen and (max-width : 768px)");
+
   const neighborhoods = [
     {
       id: 1,
@@ -58,9 +61,9 @@ const NeighborhoodListing = () => {
   ]
 
   return (
-    <div className="flex-center flex-col">
-      <div className="flex-center flex-col text-center">
-        <h1 className="h1-bold pb-2 pt-9"> Find your neighborhood </h1>
+    <div className="flex-center flex-col px-5">
+      <div className="flex-center flex-col">
+        <h1 className="sm:h1-bold h2-bold pb-2 pt-9"> Find your neighborhood </h1>
         <h4 className="h5-bold pb-2 text-slate-400">
           Find your dream apartment with our listing
         </h4>
@@ -68,7 +71,7 @@ const NeighborhoodListing = () => {
 
       <div className="mx-auto grid w-full max-w-6xl pt-8">
         <Swiper
-          slidesPerView={5}
+          slidesPerView={isSmallDevice ? 2 : 5}
           centeredSlides={false}
           spaceBetween={30}
           pagination={{

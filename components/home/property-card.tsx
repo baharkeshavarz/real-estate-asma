@@ -13,7 +13,7 @@ interface PropertyCardProps {
 const PropertyCard = ({ property }: PropertyCardProps) => {
   return (
     <div className="flex flex-col rounded-md bg-white p-5 shadow-xl">
-      <div className="relative mx-auto h-[200px] w-full overflow-hidden rounded-lg ">
+      <div className="relative mx-auto h-[200px] w-full overflow-hidden rounded-lg">
         <Image src={property.img} alt={property.title} fill />
         <Link
           href=""

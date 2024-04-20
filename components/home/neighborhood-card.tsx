@@ -8,8 +8,8 @@ interface NeighborhoodCardProps {
 
 const NeighborhoodCard = ({ property }: NeighborhoodCardProps) => {
   return (
-    <div className="flex-start flex-col">
-      <div className="relative mx-auto h-[320px] w-full overflow-hidden rounded-xl">
+    <div className="flex-start flex-col shadow-xl">
+      <div className="relative mx-auto h-[320px] w-full overflow-hidden rounded-xl ">
         <Image src={property.img} alt={property.title} fill />
         <Link
           href="#"

@@ -40,8 +40,9 @@ const Footer = () => {
                     <Logo />
                   </Link>
                   <p className="mt-6 text-gray-300">
-                    A great plateform to buy, sell and rent your properties
-                    without any agent or commisions.
+                    We are always ready to move our achievements to the next
+                    level We are constantly growing and we would like to keep
+                    pace with growth.
                   </p>
                 </div>
 
@@ -149,8 +150,7 @@ const Footer = () => {
                     </svg>
                     <div className="body-regular">
                       <h6 className="mb-2 text-gray-300">
-                        C/54 Northwest Freeway, <br /> Suite 558, <br />{" "}
-                        Houston, USA 485
+                        Muscat, Oman
                       </h6>
                       <Link
                         href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin"
@@ -180,10 +180,10 @@ const Footer = () => {
                     </svg>
                     <div className="">
                       <Link
-                        href="mailto:contact@example.com"
+                        href="mailto:info@alasmaproperties.com"
                         className="text-secondary-200 duration-500 ease-in-out hover:text-slate-400"
                       >
-                        contact@example.com
+                        info@alasmaproperties.com
                       </Link>
                     </div>
                   </div>
@@ -205,10 +205,10 @@ const Footer = () => {
                     </svg>
                     <div className="">
                       <Link
-                        href="tel:+152534-468-854"
+                        href="tel:+96896078881"
                         className="text-secondary-200 duration-500 ease-in-out hover:text-slate-400"
                       >
-                        +152 534-468-854
+                        +968 96078881
                       </Link>
                     </div>
                   </div>

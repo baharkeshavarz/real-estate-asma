@@ -5,7 +5,7 @@ const FeaturedTitle = () => {
   return (
     <div className="flex-center flex-col">
       <div className="flex-center flex-col text-center">
-        <h1 className="h1-bold pb-2 pt-9">Discover the latest properties</h1>
+        <h1 className="sm:h1-bold h2-bold pb-2 pt-9">Discover the latest properties</h1>
         <h4 className="h5-bold pb-2 text-slate-400">
           A great plateform to buy, sell and rent your properties
         </h4>

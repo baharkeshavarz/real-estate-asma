@@ -2,6 +2,8 @@ import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 import { HiMiniPlay } from "react-icons/hi2"
+import { HiCheck } from "react-icons/hi2";
+import LinkBtn from "../shared/inputs/link-btn";
 
 const About = () => {
   return (
@@ -10,7 +12,7 @@ const About = () => {
         <div className="md:col-span-5">
           <div className="relative">
             <Image
-              src="/assets/images/about.jpg"
+              src="/assets/images/about.webp"
               width={711}
               height={711}
               className="rounded-xl shadow-md"
@@ -32,22 +34,28 @@ const About = () => {
         <div className="md:col-span-7">
           <div className="lg:ms-4">
             <h4 className="mb-6 text-2xl font-semibold leading-normal md:text-3xl lg:leading-normal">
-              About Us
+              About Al Asma
             </h4>
-            <p className="max-w-xl text-slate-400">
-              Al Asma developed a platform for the Real Estate marketplace that
-              allows buyers and sellers to easily execute a transaction on their
-              own. The platform drives efficiency, cost transparency and control
-              into the hands of the consumers. Al Asma is Real Estate Redefined.
+            <p className="max-w-xl text-justify leading-[25px] text-secondary-800">
+              Our Vision is to achieve 100% customer satisfaction by providing
+              high quality services at reasonable cost. Our vision for the
+              future is to strive to become an entity in the solutions of
+              employment-based and commercial services companies,capable of
+              demanding an unconditional response to the target position. We are
+              always ready to move our achievements to the next level We are
+              constantly growing and we would like to keep pace with growth.
             </p>
 
+            <h4 className="py-6 paragraph-semibold">Our keys for development</h4>
+            <ul className="list-unstyled text-secondary-800 space-y-2">
+              <li className="flex-start gap-1"><HiCheck/> Desire for Excellence</li>
+              <li className="flex-start gap-1"><HiCheck/> Trust and confidence build-up</li>
+              <li className="flex-start gap-1"><HiCheck/> Innovation</li>
+              <li className="flex-start gap-1"><HiCheck/> Transparency</li>
+              <li className="flex-start gap-1"><HiCheck/> Teamwork</li>
+            </ul>
             <div className="mt-4">
-              <Link
-                href=""
-                className="btn body-semibold mt-5 rounded-md bg-primary-500 p-3 text-secondary-800 hover:bg-primary-800"
-              >
-                Learn More{" "}
-              </Link>
+              <LinkBtn label="Learn More" hrefLink="#"/>
             </div>
           </div>
         </div>

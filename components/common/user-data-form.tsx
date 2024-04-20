@@ -45,7 +45,7 @@ const UserDataForm = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-2">
           <label htmlFor="lead" className="body-regular">
-            Your Nationality:
+             Nationality:
           </label>
           <div className="mt-3">
             <Select
@@ -67,7 +67,7 @@ const UserDataForm = () => {
         <div className="mt-4">
           <FormInput
             name="name"
-            label="Your Name:"
+            label="Name:"
             register={register}
             error={errors.name}
           />
@@ -76,7 +76,7 @@ const UserDataForm = () => {
         <div className="mt-4">
           <FormInput
             name="family"
-            label="Your Family Name:"
+            label="Family Name:"
             register={register}
             error={errors.family}
           />
@@ -104,7 +104,7 @@ const UserDataForm = () => {
           <button
             name="user-data"
             type="submit"
-            className="w-full cursor-pointer rounded-md bg-primary-500 px-4 py-2 body-medium
+            className="body-medium w-full cursor-pointer rounded-md bg-primary-500 px-4 py-2
                        tracking-wide text-gray-700 transition-colors duration-200 hover:bg-primary-900 hover:text-white
                      focus:bg-black focus:text-white focus:outline-none"
           >
