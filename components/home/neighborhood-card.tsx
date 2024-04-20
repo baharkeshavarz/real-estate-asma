@@ -13,7 +13,8 @@ const NeighborhoodCard = ({ property }: NeighborhoodCardProps) => {
         <Image src={property.img} alt={property.title} fill />
         <Link
           href="#"
-          className="absolute left-0 top-0 z-10 h-full w-full bg-black/80 opacity-20 transition-all duration-300 hover:scale-110 hover:opacity-40"
+          className="absolute left-0 bottom-0 z-10 h-full w-full
+           bg-black/80 opacity-20 transition-all duration-300 hover:opacity-40"
         ></Link>
       </div>
 
