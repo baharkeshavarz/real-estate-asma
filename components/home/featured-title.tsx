@@ -1,5 +1,5 @@
 import React from "react"
-import Tooltip from "../common/ui/tooltip"
+import Tooltip from "../shared/tooltip"
 
 const FeaturedTitle = () => {
   return (
