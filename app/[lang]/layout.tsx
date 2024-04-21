@@ -20,8 +20,8 @@ const noto_arabic = Noto_Sans_Arabic({
 })
 
 export const metadata: Metadata = {
-  title: "Influous",
-  description: "Influous App"
+  title: "Al Asma",
+  description: "Al Asma App"
 }
 
 export async function generateStaticParams() {
