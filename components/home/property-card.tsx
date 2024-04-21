@@ -16,7 +16,7 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
       <div className="relative mx-auto h-[200px] w-full overflow-hidden rounded-lg">
         <Image src={property.img} alt={property.title} fill />
         <Link
-          href=""
+          href={`/en/properties/${property.id}`}
           className="absolute left-0 top-0 z-10 h-full w-full bg-black opacity-0 transition-all duration-300 hover:opacity-40 "
         ></Link>
       </div>

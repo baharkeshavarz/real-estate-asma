@@ -4,8 +4,8 @@ import { Logo } from "@/components/layouts/Logo"
 const Intro = () => {
   return (
     <div className="grid h-screen grid-cols-1 md:grid-cols-2">
-      <div className="flex-center bg-[#212121]">
-        <div className="relative m-auto h-[500px] w-[500px] p-10 ">
+      <div className="flex-center bg-[#212121] shadow-xl">
+        <div className="relative h-[500px] w-[500px] p-10">
           <Image src="/assets/images/about.webp" fill alt="Al Asma" />
         </div>
       </div>
@@ -21,8 +21,8 @@ const Intro = () => {
           </h4>
         </div>
 
-        <div className="w-full space-y-5 md:px-24 px-5 py-8">
-          <div className="flex w-full flex-col cursor-pointer rounded-md bg-white/80 shadow-2xl transition-all duration-500 ease-in-out hover:scale-105">
+        <div className="w-full space-y-5 px-5 py-8 md:px-24">
+          <div className="flex w-full cursor-pointer flex-col rounded-md bg-white/80 shadow-2xl transition-all duration-500 ease-in-out hover:scale-105">
             <div className="relative h-[200px] w-full">
               <Image
                 src="/assets/images/intro/united-arab-emirates.jpg"

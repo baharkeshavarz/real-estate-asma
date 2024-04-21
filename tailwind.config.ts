@@ -31,7 +31,8 @@ const config: Config = {
         },
         ternary: {
           500: "#1c1c1e"
-        }
+        },
+        "accent-blue": "#000",
       },
       boxShadow: {
         "light-100":

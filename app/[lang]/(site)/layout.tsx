@@ -12,7 +12,7 @@ export default async function MainLayout({
   return (
     <main>
       <NavBar />
-      <div className="mx-auto w-full">{children}</div>
+      <div className="pt-10">{children}</div>
       <Footer />
     </main>
   )
