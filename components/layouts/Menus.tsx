@@ -1,5 +1,6 @@
 "use client"
 
+import { links } from "@/constants/navbar"
 import Link from "next/link"
 import React, { useState } from "react"
 import { FaBars, FaTimes } from "react-icons/fa"
@@ -7,39 +8,15 @@ import { LiaUserLockSolid } from "react-icons/lia"
 
 const Menus = () => {
   const [nav, setNav] = useState(false)
-
-  const links = [
-    {
-      id: 1,
-      link: "home"
-    },
-    {
-      id: 2,
-      link: "about"
-    },
-    {
-      id: 3,
-      link: "portfolio"
-    },
-    {
-      id: 4,
-      link: "experience"
-    },
-    {
-      id: 5,
-      link: "contact"
-    }
-  ]
-
   return (
     <div className="nav flex w-full px-4 text-white">
       <ul className="hidden md:flex">
-        {links.map(({ id, link }) => (
+        {links.map(({ id, link, title }) => (
           <li
             key={id}
             className="base-medium cursor-pointer px-4 capitalize text-gray-500 duration-200 hover:scale-105 hover:text-primary-500"
           >
-            <Link href={link}>{link}</Link>
+            <Link href={link}>{title}</Link>
           </li>
         ))}
       </ul>
