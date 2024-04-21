@@ -1,16 +1,26 @@
+"use client"
+
+import FilterYearBuilt from "./filter-built"
+import FilterButton from "./filter-button"
 import FilterItemCounts from "./filter-item-counts-"
+import FilterLocation from "./filter-location"
 import FilterPriceRange from "./filter-range"
+import FilterSize from "./filter-size"
 import FilterStatus from "./filter-status"
 import FilterType from "./filter-type"
 
 const PropertyFilter = () => {
   return (
-    <div className="rounded-md border border-secondary-200 w-[320px] p-5 flex flex-col gap-y-5">
-       <FilterStatus/>
-       <FilterType/>
-       <FilterPriceRange/>
-       <FilterItemCounts title="Bedrooms"/>
-       <FilterItemCounts title="Bathrooms"/>
+    <div className="flex md:w-[320px] w-full flex-col gap-y-5 rounded-md border border-secondary-200 p-5">
+      <FilterStatus />
+      <FilterType />
+      <FilterPriceRange />
+      <FilterItemCounts title="Bedrooms" />
+      <FilterItemCounts title="Bathrooms" />
+      <FilterLocation />
+      <FilterSize />
+      <FilterYearBuilt />
+      <FilterButton/>
     </div>
   )
 }
