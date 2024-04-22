@@ -4,12 +4,13 @@ interface PropertyBadgeProps {
   icon?: IconType
   title: string,
   value: number,
+  size?: number,
 }
 
-const PropertyBadge = ({ title, icon: Icon, value }: PropertyBadgeProps) => {
+const PropertyBadge = ({ title, icon: Icon, value, size= 24 }: PropertyBadgeProps) => {
   return (
     <div className="flex-start space-2 small-regular">
-      {Icon && <Icon size={24} className="text-secondary-800" />}
+      {Icon && <Icon size={size} className="text-secondary-800" />}
       <p className="px-1">{value} {title}</p>
     </div>
   )

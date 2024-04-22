@@ -6,6 +6,7 @@ export interface PropertyItem {
     beds: number,
     baths: number,
     sqft: number,
+    location: string,
     img: string,
   }
 

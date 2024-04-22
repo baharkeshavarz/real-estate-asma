@@ -36,7 +36,6 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
         />
         <PropertyBadge icon={SlSizeActual} title="sqf" value={property.sqft} />
       </div>
-      <div className="h-1 divide-y divide-gray-800"></div>
     </div>
   )
 }
