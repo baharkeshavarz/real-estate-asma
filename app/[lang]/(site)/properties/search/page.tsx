@@ -1,14 +1,13 @@
 import Breadcrumb from "@/components/common/breadcrumb"
-import PropertyOverview from "./components/property-overview"
-import ScheduleTour from "./components/schedule-tour"
-import { houses } from "@/constants/general"
+import PropertyFilter from "../components/filter/property-filter"
+import PropertyList from "../components/property-list"
 
-const PropertyDetail = () => {
+const PropertyResult = () => {
   return (
     <div className="mx-auto flex min-h-screen max-w-5xl flex-col">
       <div className="py-5">
         <Breadcrumb
-          homeElement={"Property Details"}
+          homeElement={"Search Properties"}
           separator={<span> | </span>}
           activeClasses="text-primary-900"
           containerClasses="flex-start py-4"
@@ -17,11 +16,11 @@ const PropertyDetail = () => {
         />
       </div>
       <div className="flex flex-col gap-5 md:flex-row">
-        <PropertyOverview property={houses[0]} />
-        <ScheduleTour />
+        <PropertyFilter />
+        <PropertyList />
       </div>
     </div>
   )
 }
 
-export default PropertyDetail
+export default PropertyResult

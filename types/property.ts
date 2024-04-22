@@ -1,6 +1,7 @@
 export interface PropertyItem {
     id: number,
     title: string,
+    description: string,
     price: string,
     currency: string,
     beds: number,
