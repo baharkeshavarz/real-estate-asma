@@ -1,9 +1,12 @@
+import Card from '@/components/common/card'
 import React from 'react'
 
 const ScheduleTour = () => {
   return (
-    <div className="bg-secondary-100 h-screen w-[320px]">
-      ScheduleTour
+    <div className="sm:w-[320px] w-full h-screen">
+      <Card>
+         ScheduleTour
+      </Card>
     </div>
   )
 }

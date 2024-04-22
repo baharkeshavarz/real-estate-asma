@@ -18,7 +18,7 @@ const PropertyOverview = ({ property }: PropertyOverviewProps) => {
   })
 
   const Map = dynamic(() => import("@/components/common/map-js"), {
-    loading: () => <Loader/>,
+    loading: () => <Loader />,
     ssr: false
   })
   return (
@@ -31,8 +31,8 @@ const PropertyOverview = ({ property }: PropertyOverviewProps) => {
       </Card>
 
       <Card>
-        <OverviewTitle title="Property details" />
-        <div className="grid grid-cols-1 gap-x-9 gap-y-4 px-2 pt-4 sm:grid-cols-2">
+        <OverviewTitle title="Property Details" />
+        <div className="grid grid-cols-1 gap-x-14 gap-y-3 px-2 pt-4 sm:grid-cols-2">
           <div className="flex-between">
             <p className="base-medium">Property ID</p>
             <p className="body-regular">RT48</p>
@@ -90,7 +90,7 @@ const PropertyOverview = ({ property }: PropertyOverviewProps) => {
       </Card>
 
       <Card>
-        <OverviewTitle title="Address" />
+        <OverviewTitle title="Map location" />
         <div className="space-y-3 pt-4">
           <div className="flex-between">
             <p className="base-medium">Address</p>
@@ -107,6 +107,7 @@ const PropertyOverview = ({ property }: PropertyOverviewProps) => {
             <p className="body-regular">California</p>
           </div>
         </div>
+        
         <div className="mt-8">
           <Map latLng={latLng} setLatLng={setLatLng} />
         </div>

@@ -25,7 +25,7 @@ const Map = ({ latLng, setLatLng }) => {
         strategy="afterInteractive"
         crossOrigin=""
         onReady={() => {
-          var map = L.map("map").setView([latLng.lat, latLng.lng], 10)
+          var map = L.map("map").setView([latLng.lat, latLng.lng], 3)
           L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
             maxZoom: 19,
             attribution:
