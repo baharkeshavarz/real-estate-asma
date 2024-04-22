@@ -27,6 +27,7 @@ const config: Config = {
         secondary: {
           100: "#f7f5f5",
           200: "#e0dede",
+          300: "#6590a3",
           800: "#5e636a"
         },
         ternary: {
