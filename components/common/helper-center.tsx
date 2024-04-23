@@ -4,7 +4,7 @@ import { HiOutlinePhone } from "react-icons/hi"
 const HelperCenter = () => {
   return (
     <div className="flex flex-col pt-5 text-black">
-      <p className="">Have Question ? Get in touch!</p>
+      <p className="paragraph-medium text-center">Have Question ? Get in touch!</p>
       <div className="pt-3">
         <button
           type="submit"
