@@ -5,9 +5,11 @@ import Link from "next/link"
 import React, { useState } from "react"
 import { FaBars, FaTimes } from "react-icons/fa"
 import { LiaUserLockSolid } from "react-icons/lia"
+import { useTranslations } from "next-intl"
 
 const Menus = () => {
   const [nav, setNav] = useState(false)
+  const t = useTranslations()
   return (
     <div className="nav flex w-full px-4 text-white">
       <ul className="hidden md:flex">
@@ -16,7 +18,7 @@ const Menus = () => {
             key={id}
             className="base-medium cursor-pointer px-4 capitalize text-gray-500 duration-200 hover:scale-105 hover:text-primary-500"
           >
-            <Link href={link}>{title}</Link>
+            <Link href={link}>{t(`navbar.${title}`)}</Link>
           </li>
         ))}
       </ul>

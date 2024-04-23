@@ -6,7 +6,7 @@ export const links = [
   },
   {
     id: 2,
-    title: "about us",
+    title: "about",
     link: "/"
   },
   {
@@ -16,18 +16,18 @@ export const links = [
   },
   {
     id: 4,
-    title: "rent a property",
+    title: "rentProperty",
     link: "/"
   },
 
   {
     id: 5,
-    title: "buy a property",
+    title: "buyProperty",
     link: "/"
   },
   {
     id: 6,
-    title: "contact us",
+    title: "contact",
     link: "/"
   }
 ]

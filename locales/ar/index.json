@@ -1,11 +1,11 @@
 {
   "navbar": {
-    "home": "Home",
-    "about": "About Us",
-    "services": "Services",
-    "rentProperty": "Rent a Property",
-    "buyProperty": "Buy A Property",
-    "contact": "Contact Us"
+    "home": "بيت",
+    "about": "معلومات عنا",
+    "services": "خدمات",
+    "rentProperty": "استئجار عقار",
+    "buyProperty": "شراء عقار",
+    "contact": "اتصل بنا"
   },
   "intro": {
     "mainMessage": "هل أنت مستعد للعثور على منزل أحلامك؟",
@@ -13,8 +13,35 @@
     "country1": "United Arab Emirates",
     "country2": "Sultanate of Oman"
   },
+  "general": {
+    "bookProperty": "احجز عقارك",
+    "login": "تسجيل الدخول",
+    "register": "يسجل",
+    "buy": "يشتري",
+    "sell": "يبيع",
+    "rent": "إيجار"
+  },
+  "forms": {
+    "minPrice": "سعر دقيقة",
+    "maxPrice": "السعر الأقصى",
+    "searchGlobally": "البحث على مستوى العالم",
+    "chooseCategory": "اختر الفئة"
+  },
+  "footer": {
+    "explore": "يستكشف",
+    "usefullLinks": "روابط مفيدة",
+    "termsOfServices": "شروط الخدمة",
+    "faq": "التعليمات",
+    "ourAgents": "وكلائنا",
+    "rights": "كل الحقوق محفوظة",
+    "viewGoogleMap": "عرض على خريطة جوجل",
+    "about": "نحن مستعدون دائمًا لنقل إنجازاتنا إلى المستوى التالي. نحن ننمو باستمرار ونرغب في مواكبة النمو"
+  },
   "pages": {
-    "general": {
+    "home": {
+      "searchNow": "ابحث الآن",
+      "findHome": "ابحث عن منزل أحلامك",
+      "findHomeSubtitle": "اعثر على مجموعة متنوعة من العقارات التي تناسبك بسهولة شديدة، وانس كل الصعوبات في العثور على مسكن لك"
     }
   }
 }

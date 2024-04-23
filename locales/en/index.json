@@ -13,8 +13,35 @@
     "country1": "United Arab Emirates",
     "country2": "Sultanate of Oman"
   },
+  "general": {
+    "bookProperty": "Book Your Property",
+    "login": "Login",
+    "register": "Register",
+    "buy": "Buy",
+    "sell": "Sell",
+    "rent": "Rent"
+  },
+  "forms": {
+    "minPrice": "Min Price",
+    "maxPrice": "Max Price",
+    "searchGlobally": "Search Globally",
+    "chooseCategory": "Choose Category"
+  },
+  "footer": {
+    "explore": "Explore",
+    "usefullLinks": "Usefull Links",
+    "termsOfServices": "Terms of Services",
+    "faq": "FAQ",
+    "ourAgents": "Our Agents",
+    "rights": "All Rights Reserved",
+    "viewGoogleMap": "View on Google map",
+    "about": "We are always ready to move our achievements to the next level We are constantly growing and we would like to keep pace with growth"
+  },
   "pages": {
-    "general": {
+    "home": {
+      "searchNow": "Search Now",
+      "findHome": "Find Your Dream Home",
+      "findHomeSubtitle": "Find a variety of properties that suit you very easily, forget all difficulties in finding a residence for you"
     }
   }
 }

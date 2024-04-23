@@ -1,22 +1,20 @@
 "use client"
 import React, { useState } from "react"
 import SearchForm from "../home/serach-form"
+import { useTranslations } from "next-intl"
 
 const Search = () => {
+  const t = useTranslations()
   const [activeTab, setActiveTab] = useState("buy-home")
 
   const handleTabClick = (tabId: string) => {
     setActiveTab(tabId)
   }
-
   return (
-    <div className="bg-main-slider p-6 text-white sm:p-0 min-h-[600px]">
+    <div className="min-h-[600px] bg-main-slider p-6 text-white sm:p-0">
       <div className="flex-center flex-col text-center">
-        <h1 className="h1-bold pb-3 pt-36">Choose your home for future life</h1>
-        <h4 className="h4-bold py-2">
-          Find a variety of properties that suit you very easily, forget all
-          difficulties in finding a residence for you
-        </h4>
+        <h1 className="h1-bold pb-3 pt-36">{t("pages.home.findHome")}</h1>
+        <h4 className="h4-bold py-2">{t("pages.home.findHomeSubtitle")}</h4>
       </div>
 
       <div className="mx-auto grid max-w-5xl grid-cols-1 justify-center">
@@ -37,7 +35,7 @@ const Search = () => {
                 aria-controls="buy-home"
                 aria-selected={activeTab === "buy-home"}
               >
-                Buy
+                {t("general.buy")}
               </button>
             </li>
             <li role="presentation" className="inline-block">
@@ -51,7 +49,7 @@ const Search = () => {
                 aria-controls="sell-home"
                 aria-selected={activeTab === "sell-home"}
               >
-                Sell
+                {t("general.sell")}
               </button>
             </li>
             <li role="presentation" className="inline-block">
@@ -65,7 +63,7 @@ const Search = () => {
                 aria-controls="rent-home"
                 aria-selected={activeTab === "rent-home"}
               >
-                Rent
+                {t("general.rent")}
               </button>
             </li>
           </ul>

@@ -5,8 +5,10 @@ import Link from "next/link"
 import NewsLetter from "./NewsLetter"
 import { SocialMedia } from "./SocialMedia"
 import { links } from "@/constants/navbar"
+import { useTranslations } from "next-intl"
 
 const Footer = () => {
+  const t = useTranslations()
   return (
     <footer className="relative mt-44 bg-slate-900">
       <div className="container relative">
@@ -40,16 +42,12 @@ const Footer = () => {
                   <Link href="#" className="text-[22px] focus:outline-none">
                     <Logo />
                   </Link>
-                  <p className="mt-6 text-gray-300">
-                    We are always ready to move our achievements to the next
-                    level We are constantly growing and we would like to keep
-                    pace with growth.
-                  </p>
+                  <p className="mt-6 text-gray-300">{t("footer.about")}</p>
                 </div>
 
                 <div className="md:col-span-4 lg:col-span-2">
                   <h5 className="font-semibold tracking-[1px] text-gray-100">
-                    Company
+                    {t("footer.explore")}
                   </h5>
                   <ul className="footer-list body-regular mt-6 list-none">
                     {links.map(({ id, title, link }) => (
@@ -58,7 +56,7 @@ const Footer = () => {
                           href={link}
                           className="flex-start text-secondary-200 duration-500 ease-in-out hover:text-slate-400"
                         >
-                          <HiChevronRight /> {title}
+                          <HiChevronRight /> {t(`navbar.${title}`)}
                         </Link>
                       </li>
                     ))}
@@ -67,7 +65,7 @@ const Footer = () => {
 
                 <div className="md:col-span-4 lg:col-span-3">
                   <h5 className="font-semibold tracking-[1px] text-gray-100">
-                    Usefull Links
+                    {t("footer.usefullLinks")}
                   </h5>
                   <ul className="footer-list body-regular mt-6 list-none">
                     <li>
@@ -76,7 +74,7 @@ const Footer = () => {
                         className="flex-start text-secondary-200 duration-500 ease-in-out hover:text-slate-400"
                       >
                         <HiChevronRight />
-                        Terms of Services
+                        {t("footer.termsOfServices")}
                       </Link>
                     </li>
                     <li className="mt-[10px]">
@@ -84,7 +82,7 @@ const Footer = () => {
                         href="#"
                         className="flex-start text-secondary-200 duration-500 ease-in-out hover:text-slate-400"
                       >
-                        <HiChevronRight /> FAQ
+                        <HiChevronRight /> {t("footer.faq")}
                       </Link>
                     </li>
 
@@ -93,7 +91,7 @@ const Footer = () => {
                         href="#"
                         className="flex-start text-secondary-200 duration-500 ease-in-out hover:text-slate-400"
                       >
-                        <HiChevronRight /> Our Agents
+                        <HiChevronRight /> {t("footer.ourAgents")}
                       </Link>
                     </li>
                   </ul>
@@ -126,7 +124,7 @@ const Footer = () => {
                         data-type="iframe"
                         className="lightbox text-primary-500 duration-500 ease-in-out hover:text-primary-800"
                       >
-                        View on Google map
+                        {t("footer.viewGoogleMap")}
                       </Link>
                     </div>
                   </div>
@@ -192,12 +190,12 @@ const Footer = () => {
           <div className="grid items-center gap-6 md:grid-cols-2">
             <div className="text-center md:text-start">
               <p className="mb-0 text-gray-300">
-                © 2024 Al Asma. Design with{" "}
-                <i className="mdi mdi-heart text-red-600"></i> by{" "}
+                © 2024 Al Asma {""} {t("footer.rights")}
+                {/* <i className="mdi mdi-heart text-red-600"></i> by{" "}
                 <Link href="#" target="_blank" className="text-reset">
                   Designer name
                 </Link>
-                .
+                . */}
               </p>
             </div>
             <SocialMedia />
