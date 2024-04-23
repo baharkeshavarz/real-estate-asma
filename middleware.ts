@@ -1,21 +1,34 @@
-import { NextRequest, NextResponse } from "next/server"
 
-const PUBLIC_FILE = /\.(.*)$/
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
+import nextIntlMiddleware from 'next-intl/middleware';
+import { locales, defaultLocale } from '@/navigation';
 
-export async function middleware(req: NextRequest) {
-  if (
-    req.nextUrl.pathname.startsWith("/_next") ||
-    req.nextUrl.pathname.includes("/api/") ||
-    PUBLIC_FILE.test(req.nextUrl.pathname)
-  ) {
-    return
-  }
+const intlMiddleware = (request: NextRequest) =>
+  Promise.resolve(
+    nextIntlMiddleware({
+      localePrefix: 'always',
+      defaultLocale,
+      locales,
+    })(request),
+  );
 
-  if (req.nextUrl.locale === "default") {
-    const locale = req.cookies.get("NEXT_LOCALE")?.value || "en"
-
-    return NextResponse.redirect(
-      new URL(`/${locale}${req.nextUrl.pathname}${req.nextUrl.search}`, req.url)
-    )
-  }
+export default async function middleware(request: NextRequest) {
+  const intlResponse = await intlMiddleware(request);
+  return intlResponse ? intlResponse : NextResponse.next();
 }
+export const config = {
+  matcher: [
+    /**
+     * It matches all paths except:
+     * 1. /api/ (includes trpc there)
+     * 2. /_next/ (Next.js internals)
+     * 3. /_proxy/ (OG tags proxying)
+     * 4. /_vercel (Vercel internals)
+     * 5. /_static (inside of /public)
+     * 6. /favicon.ico, /sitemap.xml, /robots.txt (static files)
+     * 7. The paths containing a file extension (e.g., .jpg, .png, etc.)
+     */
+    '/((?!api/|_next/|_proxy/|_vercel|_static|favicon.ico|sitemap.xml|robots.txt|.*\\..*).*)',
+  ],
+};

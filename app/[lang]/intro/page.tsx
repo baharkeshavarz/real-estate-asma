@@ -1,13 +1,12 @@
 import Image from "next/image"
 import { Logo } from "@/components/layouts/Logo"
-import { ChildrenLocalProps } from "@/types"
-import { getDictionary } from "@/lib/locale"
+import { useTranslations } from "next-intl"
 
-const Intro = async ({ children, params }: ChildrenLocalProps) => {
-  const t = await getDictionary(params.lang)
+export default function Intro() {
+  const t = useTranslations()
   return (
     <div className="grid h-screen grid-cols-1 md:grid-cols-2">
-      <div className="flex-center bg-[#212121] shadow-xl">
+      <div className="flex-center bg-ternary-500 shadow-xl">
         <div className="relative h-[550px] w-[600px] p-10">
           <Image src="/assets/images/about.jpg" fill alt="Al Asma" />
         </div>
@@ -16,9 +15,9 @@ const Intro = async ({ children, params }: ChildrenLocalProps) => {
       <div className="flex-center flex-col bg-secondary-100">
         <Logo classes="pt-12" />
         <div className="flex-center flex-col text-center text-black/70">
-          <h1 className="h3-semibold pb-2 pt-8">{t.intro.mainMessage}</h1>
+          <h1 className="h3-semibold pb-2 pt-8">{t("intro.mainMessage")}</h1>
           <h4 className="body-regular pt-1 text-secondary-800">
-            {t.intro.subMessage}
+            {t("intro.subMessage")}
           </h4>
         </div>
 
@@ -33,7 +32,7 @@ const Intro = async ({ children, params }: ChildrenLocalProps) => {
               />
             </div>
             <h4 className="paragraph-regular py-3 text-center text-black">
-              {t.intro.country1}
+              {t("intro.country1")}
             </h4>
           </div>
           <div className="flex cursor-pointer flex-col rounded-md bg-white/80 shadow-2xl transition-all duration-500 ease-in-out hover:scale-105">
@@ -46,7 +45,7 @@ const Intro = async ({ children, params }: ChildrenLocalProps) => {
               />
             </div>
             <h4 className="paragraph-regular py-3 text-center text-black">
-              {t.intro.country2}
+              {t("intro.country2")}
             </h4>
           </div>
         </div>
@@ -54,5 +53,3 @@ const Intro = async ({ children, params }: ChildrenLocalProps) => {
     </div>
   )
 }
-
-export default Intro

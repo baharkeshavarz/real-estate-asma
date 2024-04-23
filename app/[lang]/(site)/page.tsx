@@ -12,8 +12,7 @@ export const metadata: Metadata = {
   description: ""
 }
 
-const Home = async ({ params: { lang } }: LocalProps) => {
-  const { pages } = await getDictionary(lang)
+const Home =  ({ params: { lang } }: LocalProps) => {
   return (
     <>
       <Search />

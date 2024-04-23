@@ -6,6 +6,8 @@ import { ChildrenLocalProps } from "@/types"
 import ToastProvider from "@/providers/toast-provider"
 import EmotionCache from "@/providers/emotion-cache"
 import ModalProvider from "@/providers/modal-provider"
+import { NextIntlClientProvider, useMessages } from "next-intl"
+import { Locale, languages } from "@/navigation"
 
 // Handle the font family
 const roboto = Roboto({
@@ -24,20 +26,23 @@ export const metadata: Metadata = {
   description: "Al Asma App"
 }
 
-export async function generateStaticParams() {
+export  function generateStaticParams() {
   return supportedLanguages.map(locale => ({ lang: locale }))
 }
 
-export default async function RootLayout({
+export default  function RootLayout({
   children,
   params
 }: ChildrenLocalProps) {
   const lang = params.lang.toString()
-  
+  const messages = useMessages()
   return (
-    <html lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}>
+    <html
+      lang={lang}
+      // dir={lang === "ar" ? "rtl" : "ltr"}
+      dir={languages[params.lang as Locale]?.direction ?? "ltr"}
+    >
       <body
-        dir={lang === "ar" ? "rtl" : "ltr"}
         className={
           params.lang.toString() === "ar"
             ? noto_arabic.className
@@ -45,6 +50,7 @@ export default async function RootLayout({
         }
       >
         <main>
+          <NextIntlClientProvider messages={messages} locale={params.lang}>
             <ToastProvider />
             <ModalProvider />
             {lang === "ar" ? (
@@ -52,6 +58,7 @@ export default async function RootLayout({
             ) : (
               <> {children} </>
             )}
+          </NextIntlClientProvider>
         </main>
       </body>
     </html>

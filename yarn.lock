@@ -222,10 +222,71 @@
   resolved "https://registry.npmjs.org/@floating-ui/utils/-/utils-0.2.1.tgz"
   integrity sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==
 
+"@formatjs/ecma402-abstract@^1.11.4":
+  version "1.18.2"
+  resolved "https://registry.npmjs.org/@formatjs/ecma402-abstract/-/ecma402-abstract-1.18.2.tgz"
+  integrity sha512-+QoPW4csYALsQIl8GbN14igZzDbuwzcpWrku9nyMXlaqAlwRBgl5V+p0vWMGFqHOw37czNXaP/lEk4wbLgcmtA==
+  dependencies:
+    "@formatjs/intl-localematcher" "0.5.4"
+    tslib "^2.4.0"
+
+"@formatjs/ecma402-abstract@1.11.4":
+  version "1.11.4"
+  resolved "https://registry.npmjs.org/@formatjs/ecma402-abstract/-/ecma402-abstract-1.11.4.tgz"
+  integrity sha512-EBikYFp2JCdIfGEb5G9dyCkTGDmC57KSHhRQOC3aYxoPWVZvfWCDjZwkGYHN7Lis/fmuWl906bnNTJifDQ3sXw==
+  dependencies:
+    "@formatjs/intl-localematcher" "0.2.25"
+    tslib "^2.1.0"
+
+"@formatjs/fast-memoize@1.2.1":
+  version "1.2.1"
+  resolved "https://registry.npmjs.org/@formatjs/fast-memoize/-/fast-memoize-1.2.1.tgz"
+  integrity sha512-Rg0e76nomkz3vF9IPlKeV+Qynok0r7YZjL6syLz4/urSg0IbjPZCB/iYUMNsYA643gh4mgrX3T7KEIFIxJBQeg==
+  dependencies:
+    tslib "^2.1.0"
+
+"@formatjs/icu-messageformat-parser@2.1.0":
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/@formatjs/icu-messageformat-parser/-/icu-messageformat-parser-2.1.0.tgz"
+  integrity sha512-Qxv/lmCN6hKpBSss2uQ8IROVnta2r9jd3ymUEIjm2UyIkUCHVcbUVRGL/KS/wv7876edvsPe+hjHVJ4z8YuVaw==
+  dependencies:
+    "@formatjs/ecma402-abstract" "1.11.4"
+    "@formatjs/icu-skeleton-parser" "1.3.6"
+    tslib "^2.1.0"
+
+"@formatjs/icu-skeleton-parser@1.3.6":
+  version "1.3.6"
+  resolved "https://registry.npmjs.org/@formatjs/icu-skeleton-parser/-/icu-skeleton-parser-1.3.6.tgz"
+  integrity sha512-I96mOxvml/YLrwU2Txnd4klA7V8fRhb6JG/4hm3VMNmeJo1F03IpV2L3wWt7EweqNLES59SZ4d6hVOPCSf80Bg==
+  dependencies:
+    "@formatjs/ecma402-abstract" "1.11.4"
+    tslib "^2.1.0"
+
+"@formatjs/intl-localematcher@^0.2.32":
+  version "0.2.32"
+  resolved "https://registry.npmjs.org/@formatjs/intl-localematcher/-/intl-localematcher-0.2.32.tgz"
+  integrity sha512-k/MEBstff4sttohyEpXxCmC3MqbUn9VvHGlZ8fauLzkbwXmVrEeyzS+4uhrvAk9DWU9/7otYWxyDox4nT/KVLQ==
+  dependencies:
+    tslib "^2.4.0"
+
 "@formatjs/intl-localematcher@^0.4.0":
   version "0.4.2"
   resolved "https://registry.npmjs.org/@formatjs/intl-localematcher/-/intl-localematcher-0.4.2.tgz"
   integrity sha512-BGdtJFmaNJy5An/Zan4OId/yR9Ih1OojFjcduX/xOvq798OgWSyDtd6Qd5jqJXwJs1ipe4Fxu9+cshic5Ox2tA==
+  dependencies:
+    tslib "^2.4.0"
+
+"@formatjs/intl-localematcher@0.2.25":
+  version "0.2.25"
+  resolved "https://registry.npmjs.org/@formatjs/intl-localematcher/-/intl-localematcher-0.2.25.tgz"
+  integrity sha512-YmLcX70BxoSopLFdLr1Ds99NdlTI2oWoLbaUW2M406lxOIPzE1KQhRz2fPUkq34xVZQaihCoU29h0KK7An3bhA==
+  dependencies:
+    tslib "^2.1.0"
+
+"@formatjs/intl-localematcher@0.5.4":
+  version "0.5.4"
+  resolved "https://registry.npmjs.org/@formatjs/intl-localematcher/-/intl-localematcher-0.5.4.tgz"
+  integrity sha512-zTwEpWOzZ2CiKcB93BLngUX59hQkuZjT2+SAQEscSm52peDW/getsawMcWF1rGRpMCX6D7nSJA3CzJ8gn13N/g==
   dependencies:
     tslib "^2.4.0"
 
@@ -995,6 +1056,11 @@ deep-is@^0.1.3:
   version "0.1.4"
   resolved "https://registry.npmjs.org/deep-is/-/deep-is-0.1.4.tgz"
   integrity sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==
+
+deepmerge@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.npmjs.org/deepmerge/-/deepmerge-4.3.1.tgz"
+  integrity sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==
 
 define-data-property@^1.0.1, define-data-property@^1.1.4:
   version "1.1.4"
@@ -1786,6 +1852,16 @@ internal-slot@^1.0.7:
     hasown "^2.0.0"
     side-channel "^1.0.4"
 
+intl-messageformat@^9.3.18:
+  version "9.13.0"
+  resolved "https://registry.npmjs.org/intl-messageformat/-/intl-messageformat-9.13.0.tgz"
+  integrity sha512-7sGC7QnSQGa5LZP7bXLDhVDtQOeKGeBFGHF2Y8LVBwYZoQZCgWeKoPGTa5GMG8g/TzDgeXuYJQis7Ggiw2xTOw==
+  dependencies:
+    "@formatjs/ecma402-abstract" "1.11.4"
+    "@formatjs/fast-memoize" "1.2.1"
+    "@formatjs/icu-messageformat-parser" "2.1.0"
+    tslib "^2.1.0"
+
 is-array-buffer@^3.0.4:
   version "3.0.4"
   resolved "https://registry.npmjs.org/is-array-buffer/-/is-array-buffer-3.0.4.tgz"
@@ -2233,7 +2309,16 @@ negotiator@^0.6.3:
   resolved "https://registry.npmjs.org/negotiator/-/negotiator-0.6.3.tgz"
   integrity sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==
 
-next@^14.2.1:
+next-intl@^3.11.3:
+  version "3.11.3"
+  resolved "https://registry.npmjs.org/next-intl/-/next-intl-3.11.3.tgz"
+  integrity sha512-l961i+Jf0PJA+EEhlP+K8LiUyu36c6j8esmlOxaJ0A5z+YTto0RmA3XTQ1dTibl1Fkkopt2fnp6r4BZplRxvTg==
+  dependencies:
+    "@formatjs/intl-localematcher" "^0.2.32"
+    negotiator "^0.6.3"
+    use-intl "^3.11.3"
+
+"next@^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0", next@^14.2.1:
   version "14.2.1"
   resolved "https://registry.npmjs.org/next/-/next-14.2.1.tgz"
   integrity sha512-SF3TJnKdH43PMkCcErLPv+x/DY1YCklslk3ZmwaVoyUfDgHKexuKlf9sEfBQ69w+ue8jQ3msLb+hSj1T19hGag==
@@ -3177,7 +3262,7 @@ tslib@^1.8.1:
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.4.0:
+tslib@^2.1.0, tslib@^2.4.0:
   version "2.6.2"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.6.2.tgz"
   integrity sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==
@@ -3279,6 +3364,14 @@ uri-js@^4.2.2:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
+
+use-intl@^3.11.3:
+  version "3.11.3"
+  resolved "https://registry.npmjs.org/use-intl/-/use-intl-3.11.3.tgz"
+  integrity sha512-qxW2CiDWQY6ilR7AxrQPp5qiU6hWWh7Ek8uBEKGjcO7KoRuJ/4/ybIi/Z7rTXnEHHvQyCT1dotyDT9WIBGwCWg==
+  dependencies:
+    "@formatjs/ecma402-abstract" "^1.11.4"
+    intl-messageformat "^9.3.18"
 
 use-isomorphic-layout-effect@^1.1.2:
   version "1.1.2"
