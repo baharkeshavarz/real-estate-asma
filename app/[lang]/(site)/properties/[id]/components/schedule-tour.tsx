@@ -1,12 +1,11 @@
-import Card from '@/components/common/card'
-import React from 'react'
+import HelperCenter from "@/components/common/helper-center"
+import ScheduleTime from "./top-view/schedule-time"
 
 const ScheduleTour = () => {
   return (
-    <div className="sm:w-[320px] w-full h-screen">
-      <Card>
-         ScheduleTour
-      </Card>
+    <div className="h-screen w-full sm:w-[320px] ">
+       <ScheduleTime/>
+       <HelperCenter/>
     </div>
   )
 }

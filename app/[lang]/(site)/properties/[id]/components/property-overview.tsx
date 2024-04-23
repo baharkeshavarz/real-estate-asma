@@ -28,7 +28,7 @@ const PropertyOverview = ({ property }: PropertyOverviewProps) => {
       <Card>
         <OverviewTitle title="Property Description" />
         <div className="body-regular py-2 text-justify text-secondary-800">
-          {property.description}
+           {property.description}
         </div>
       </Card>
 
