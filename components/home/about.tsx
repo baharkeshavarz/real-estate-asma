@@ -12,7 +12,7 @@ const About = () => {
         <div className="md:col-span-5">
           <div className="relative">
             <Image
-              src="/assets/images/about.webp"
+              src="/assets/images/about.jpg"
               width={711}
               height={711}
               className="rounded-xl shadow-md"
