@@ -67,7 +67,7 @@ const UserDataForm = () => {
         <div className="mt-4">
           <FormInput
             name="name"
-            label="Name:"
+            label="First Name:"
             register={register}
             error={errors.name}
           />
@@ -76,7 +76,7 @@ const UserDataForm = () => {
         <div className="mt-4">
           <FormInput
             name="family"
-            label="Family Name:"
+            label="Last Name:"
             register={register}
             error={errors.family}
           />
