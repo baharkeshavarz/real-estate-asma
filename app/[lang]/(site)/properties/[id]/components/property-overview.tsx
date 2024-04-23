@@ -6,6 +6,8 @@ import OverviewTitle from "./overview-title"
 import { useState } from "react"
 import dynamic from "next/dynamic"
 import Loader from "@/components/common/loading/loader"
+import FeaturedLinearCard from "./top-view/featured-linear-card"
+import { HiCheck } from "react-icons/hi";
 
 interface PropertyOverviewProps {
   property: PropertyItem
@@ -87,6 +89,18 @@ const PropertyOverview = ({ property }: PropertyOverviewProps) => {
 
       <Card>
         <OverviewTitle title="Featured" />
+        <div className="grid grid-cols-1 gap-x-14 gap-y-3 px-2 pt-4 sm:grid-cols-2">
+           <FeaturedLinearCard title="Air Conditioning" icon={HiCheck}/>
+           <FeaturedLinearCard title="Lawn" icon={HiCheck}/>
+           <FeaturedLinearCard title="Barbeque" icon={HiCheck}/>
+           <FeaturedLinearCard title="Dryer" icon={HiCheck}/>
+           <FeaturedLinearCard title="Outdoor Shower" icon={HiCheck}/>
+           <FeaturedLinearCard title="Washer" icon={HiCheck}/>
+           <FeaturedLinearCard title="TV Cable" icon={HiCheck}/>
+           <FeaturedLinearCard title="Swimming Pool" icon={HiCheck}/>
+           <FeaturedLinearCard title="Gym" icon={HiCheck}/>
+           <FeaturedLinearCard title="Refrigerator" icon={HiCheck}/>
+        </div>
       </Card>
 
       <Card>
@@ -107,14 +121,10 @@ const PropertyOverview = ({ property }: PropertyOverviewProps) => {
             <p className="body-regular">California</p>
           </div>
         </div>
-        
+
         <div className="mt-8">
           <Map latLng={latLng} setLatLng={setLatLng} />
         </div>
-      </Card>
-
-      <Card>
-        <OverviewTitle title="Video" />
       </Card>
     </div>
   )

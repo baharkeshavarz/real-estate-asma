@@ -31,6 +31,7 @@ const config: Config = {
           800: "#5e636a"
         },
         ternary: {
+          300: "#3d3d3d",
           500: "#1c1c1e"
         },
         "accent-blue": "#000",

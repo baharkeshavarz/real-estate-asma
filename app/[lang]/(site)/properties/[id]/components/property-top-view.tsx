@@ -9,9 +9,9 @@ interface PropertyTopViewProps {
 
 const PropertyTopView = ({ property }: PropertyTopViewProps) => {
   return (
-    <div className="min-h-96 bg-slate-900">
+    <div className="min-h-96 bg-ternary-500">
        <PropertyTopDetail property={property}/>
-       {/* <PropertyGallery/> */}
+       <PropertyGallery/>
        <PropertyFeatured />
     </div>
   )

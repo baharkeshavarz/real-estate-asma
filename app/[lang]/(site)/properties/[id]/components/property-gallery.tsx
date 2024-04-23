@@ -20,7 +20,7 @@ const PropertyGallery = () => {
     console.log("lightGallery has been initialized")
   }
   return (
-    <>
+    <div className="flex-center">
       <LightGallery onInit={onInit} speed={500} plugins={[lgThumbnail, lgZoom]}>
         {/* <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
           <div className="grid gap-4">
@@ -117,15 +117,15 @@ const PropertyGallery = () => {
           </div>
         </div> */}
 
-          <a href="/assets/images/properties/property-1.jpg" className="block w-60">
+          <a href="/assets/images/properties/property-1.jpg" className="block">
             <img
               alt="img1"
-              src="/assets/images/properties/property-1.jpg"
-              width={200}
-              height={200}
+              src="/assets/images/properties/property-2.jpg"
+              width={700}
+              height={150}
             />
           </a>
-          <a href="/assets/images/properties/property-2.jpg" className="block w-60">
+          {/* <a href="/assets/images/properties/property-2.jpg" className="block w-60">
             <img
               alt="img2"
               src="/assets/images/properties/property-3.jpg"
@@ -141,9 +141,9 @@ const PropertyGallery = () => {
               width={200}
               height={200}
             />
-          </a>
+          </a> */}
       </LightGallery>
-    </>
+    </div>
   )
 }
 

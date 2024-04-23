@@ -1,21 +1,21 @@
 import { IconType } from "react-icons"
 
-interface PropertyCardProps {
+interface FeaturedBoxCardProps {
   icon?: IconType
   title: string
   value: number | string
   size?: number
 }
 
-const PropertyCard = ({
+const FeaturedBoxCard = ({
   title,
   icon: Icon,
   value,
   size = 24
-}: PropertyCardProps) => {
+}: FeaturedBoxCardProps) => {
   return (
-    <div className="flex-start small-regular gap-2">
-      <div className="group rounded-md border border-secondary-300 bg-secondary-800 p-3 hover:bg-white">
+    <div className="flex-start small-regular gap-2 gap-x-3">
+      <div className="group rounded-md border border-gray-700 bg-ternary-300 p-3 hover:bg-white">
         {Icon && (
           <Icon
             size={size}
@@ -23,7 +23,7 @@ const PropertyCard = ({
           />
         )}
       </div>
-      <div className="flex-start body-regular flex-col gap-y-2 text-white">
+      <div className="flex body-regular flex-col gap-y-2 text-white">
         <p>{title}</p>
         <p>{value}</p>
       </div>
@@ -31,4 +31,4 @@ const PropertyCard = ({
   )
 }
 
-export default PropertyCard
+export default FeaturedBoxCard
