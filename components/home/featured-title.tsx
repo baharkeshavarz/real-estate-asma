@@ -15,47 +15,55 @@ const FeaturedTitle = () => {
         </h4>
       </div>
 
-      <ul className="flex-center body-regular gap-x-5 py-5">
-        <li>
+      <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-6 body-regular sm:gap-5 gap-3 py-5">
+        <div>
           <Tooltip message="8 Property">
             <span className="cursor-pointer bg-white p-2 text-primary-900 shadow-md hover:text-primary-900">
               Houses
             </span>
           </Tooltip>
-        </li>
+        </div>
 
-        <li>
+        <div>
           <Tooltip message="6 Property">
             <span className="cursor-pointer bg-white p-2 shadow-md hover:text-primary-900">
               Smart Home
             </span>
           </Tooltip>
-        </li>
+        </div>
 
-        <li>
+        <div>
           <Tooltip message="5 Property">
             <span className="cursor-pointer bg-white p-2 shadow-md hover:text-primary-900">
               Apartments
             </span>
           </Tooltip>
-        </li>
+        </div>
 
-        <li>
+        <div>
           <Tooltip message="5 Property">
             <span className="cursor-pointer bg-white p-2 shadow-md hover:text-primary-900">
               Office
             </span>
           </Tooltip>
-        </li>
+        </div>
 
-        <li>
+        <div>
           <Tooltip message="5 Property">
             <span className="cursor-pointer bg-white p-2 shadow-md hover:text-primary-900">
               Villa
             </span>
           </Tooltip>
-        </li>
-      </ul>
+        </div>
+
+        <div>
+          <Tooltip message="5 Property">
+            <span className="cursor-pointer bg-white p-2 shadow-md hover:text-primary-900">
+              Land
+            </span>
+          </Tooltip>
+        </div>
+      </div>
     </div>
   )
 }

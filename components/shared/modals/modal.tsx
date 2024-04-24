@@ -34,7 +34,7 @@ const Modal = ({
     <>
       {isOpen && (
         <dialog className="fixed left-0 top-0 z-[9999] flex h-full w-full items-center justify-center overflow-auto bg-black bg-opacity-50 backdrop-blur">
-          <div className="m-auto max-h-[700px] overflow-y-scroll rounded-lg bg-white p-4">
+          <div className="m-auto max-h-[600px] overflow-y-scroll rounded-lg bg-white sm:p-2 p-16">
             <div className={`flex flex-col items-center gap-4 p-2 ${width}`}>
               <div className="flex-end w-full p-0 pb-2">
                 <button
