@@ -5,12 +5,9 @@ import { HiMiniPlay } from "react-icons/hi2"
 import { HiCheck } from "react-icons/hi2"
 import LinkBtn from "../shared/inputs/link-btn"
 import { useTranslations } from "next-intl"
-import { toast } from "react-toastify"
 
 const About = () => {
   const t = useTranslations()
-  toast.success("t.messages.sentSms")
-
   return (
     <div className="container relative mt-16 lg:mt-24">
       <div className="grid grid-cols-1 items-center gap-[30px] md:grid-cols-12">
