@@ -1,7 +1,5 @@
 import React from "react"
 import { Metadata } from "next"
-import { getDictionary } from "@/lib/locale"
-import { LocalProps } from "@/types"
 import Search from "@/components/layouts/Search"
 import FeaturedProperties from "@/components/home/featured-properties"
 import About from "@/components/home/about"
@@ -12,7 +10,7 @@ export const metadata: Metadata = {
   description: ""
 }
 
-const Home =  ({ params: { lang } }: LocalProps) => {
+const Home = () => {
   return (
     <>
       <Search />

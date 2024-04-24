@@ -1,6 +1,5 @@
 import "./globals.css"
 import type { Metadata } from "next"
-import { supportedLanguages } from "@/i18n.config"
 import { Roboto, Noto_Sans_Arabic } from "next/font/google"
 import { ChildrenLocalProps } from "@/types"
 import ToastProvider from "@/providers/toast-provider"
@@ -8,6 +7,7 @@ import EmotionCache from "@/providers/emotion-cache"
 import ModalProvider from "@/providers/modal-provider"
 import { NextIntlClientProvider, useMessages } from "next-intl"
 import { Locale, languages } from "@/navigation"
+import { unstable_setRequestLocale } from "next-intl/server"
 
 // Handle the font family
 const roboto = Roboto({
@@ -26,20 +26,17 @@ export const metadata: Metadata = {
   description: "Al Asma App"
 }
 
-export  function generateStaticParams() {
-  return supportedLanguages.map(locale => ({ lang: locale }))
-}
+// export  function generateStaticParams() {
+//   return supportedLanguages.map(locale => ({ lang: locale }))
+// }
 
-export default  function RootLayout({
-  children,
-  params
-}: ChildrenLocalProps) {
+export default function RootLayout({ children, params }: ChildrenLocalProps) {
   const lang = params.lang.toString()
   const messages = useMessages()
+  unstable_setRequestLocale(params.lang)
   return (
     <html
       lang={lang}
-      // dir={lang === "ar" ? "rtl" : "ltr"}
       dir={languages[params.lang as Locale]?.direction ?? "ltr"}
     >
       <body
