@@ -19,7 +19,8 @@
     "register": "Register",
     "buy": "Buy",
     "sell": "Sell",
-    "rent": "Rent"
+    "rent": "Rent",
+    "learnMore": "Learn More"
   },
   "forms": {
     "minPrice": "Min Price",
@@ -49,6 +50,16 @@
       "searchNow": "Search Now",
       "findHome": "Find Your Dream Home",
       "findHomeSubtitle": "Find a variety of properties that suit you very easily, forget all difficulties in finding a residence for you"
+    },
+    "about": {
+      "title": "About Al Asma",
+      "comment": "Our Vision is to achieve 100% customer satisfaction by providing high quality services at reasonable cost. Our vision for the future is to strive to become an entity in the solutions of employment-based and commercial services companies,capable of demanding an unconditional response to the target position. We are always ready to move our achievements to the next level We are constantly growing and we would like to keep pace with growth.",
+      "ourKeys": "Our keys for development",
+      "key1": "Desire for Excellence",
+      "key2": "Trust and confidence build-up",
+      "key3": "Innovation",
+      "key4": "Transparency",
+      "key5": "Teamwork"
     }
   }
 }

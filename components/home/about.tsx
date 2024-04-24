@@ -2,10 +2,12 @@ import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 import { HiMiniPlay } from "react-icons/hi2"
-import { HiCheck } from "react-icons/hi2";
-import LinkBtn from "../shared/inputs/link-btn";
+import { HiCheck } from "react-icons/hi2"
+import LinkBtn from "../shared/inputs/link-btn"
+import { useTranslations } from "next-intl"
 
 const About = () => {
+  const t = useTranslations()
   return (
     <div className="container relative mt-16 lg:mt-24">
       <div className="grid grid-cols-1 items-center gap-[30px] md:grid-cols-12">
@@ -34,28 +36,34 @@ const About = () => {
         <div className="md:col-span-7">
           <div className="lg:ms-4">
             <h4 className="mb-6 text-2xl font-semibold leading-normal md:text-3xl lg:leading-normal">
-              About Al Asma
+              {t("pages.about.title")}
             </h4>
             <p className="max-w-xl text-justify leading-[25px] text-secondary-800">
-              Our Vision is to achieve 100% customer satisfaction by providing
-              high quality services at reasonable cost. Our vision for the
-              future is to strive to become an entity in the solutions of
-              employment-based and commercial services companies,capable of
-              demanding an unconditional response to the target position. We are
-              always ready to move our achievements to the next level We are
-              constantly growing and we would like to keep pace with growth.
+              {t("pages.about.comment")}
             </p>
 
-            <h4 className="py-6 paragraph-semibold">Our keys for development</h4>
-            <ul className="list-unstyled text-secondary-800 space-y-2">
-              <li className="flex-start gap-1"><HiCheck/> Desire for Excellence</li>
-              <li className="flex-start gap-1"><HiCheck/> Trust and confidence build-up</li>
-              <li className="flex-start gap-1"><HiCheck/> Innovation</li>
-              <li className="flex-start gap-1"><HiCheck/> Transparency</li>
-              <li className="flex-start gap-1"><HiCheck/> Teamwork</li>
+            <h4 className="paragraph-semibold py-6">
+              {t("pages.about.ourKeys")}
+            </h4>
+            <ul className="list-unstyled space-y-2 text-secondary-800">
+              <li className="flex-start gap-1">
+                <HiCheck /> {t("pages.about.key1")}
+              </li>
+              <li className="flex-start gap-1">
+                <HiCheck /> {t("pages.about.key2")}
+              </li>
+              <li className="flex-start gap-1">
+                <HiCheck /> {t("pages.about.key3")}
+              </li>
+              <li className="flex-start gap-1">
+                <HiCheck /> {t("pages.about.key4")}
+              </li>
+              <li className="flex-start gap-1">
+                <HiCheck /> {t("pages.about.key5")}
+              </li>
             </ul>
             <div className="mt-4">
-              <LinkBtn label="Learn More" hrefLink="#"/>
+              <LinkBtn label={t("general.learnMore")} hrefLink="#" />
             </div>
           </div>
         </div>
