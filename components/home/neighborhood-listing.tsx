@@ -7,12 +7,14 @@ import { useMediaQuery } from "@uidotdev/usehooks";
 import "swiper/css"
 import "swiper/css/pagination"
 import "swiper/css/navigation"
+import { useTranslations } from "next-intl"
 
 // import required modules
 import { Navigation } from "swiper/modules"
 import NeighborhoodCard from "./neighborhood-card"
 
 const NeighborhoodListing = () => {
+  const t = useTranslations()
   let isSmallDevice = false;
   if (typeof window !== 'undefined') {
     isSmallDevice = useMediaQuery("only screen and (max-width : 768px)");
@@ -66,9 +68,9 @@ const NeighborhoodListing = () => {
   return (
     <div className="flex-center flex-col px-5">
       <div className="flex-center flex-col">
-        <h1 className="sm:h1-bold h2-bold pb-2 pt-9"> Find your categories </h1>
-        <h4 className="h5-bold pb-2 text-slate-400">
-          Find your dream property with our listing
+        <h1 className="sm:h1-bold h3-bold pb-2 pt-9">{t("pages.home.findCategories")}</h1>
+        <h4 className="h5-bold pb-2 text-secondary-300">
+           {t("pages.home.findListing")}
         </h4>
       </div>
 

@@ -55,7 +55,7 @@ const Footer = () => {
                       <li className="mt-[10px]" key={id}>
                         <Link
                           href={link}
-                          className="flex-start text-secondary-200 duration-500 ease-in-out hover:text-slate-400"
+                          className="flex-start text-secondary-200 duration-500 ease-in-out hover:text-secondary-300"
                         >
                           <HiChevronRight /> {t(`navbar.${title}`)}
                         </Link>
@@ -72,7 +72,7 @@ const Footer = () => {
                     <li>
                       <Link
                         href="#"
-                        className="flex-start text-secondary-200 duration-500 ease-in-out hover:text-slate-400"
+                        className="flex-start text-secondary-200 duration-500 ease-in-out hover:text-secondary-300"
                       >
                         <HiChevronRight />
                         {t("footer.termsOfServices")}
@@ -81,7 +81,7 @@ const Footer = () => {
                     <li className="mt-[10px]">
                       <Link
                         href="#"
-                        className="flex-start text-secondary-200 duration-500 ease-in-out hover:text-slate-400"
+                        className="flex-start text-secondary-200 duration-500 ease-in-out hover:text-secondary-300"
                       >
                         <HiChevronRight /> {t("footer.faq")}
                       </Link>
@@ -90,7 +90,7 @@ const Footer = () => {
                     <li className="mt-[10px]">
                       <Link
                         href="#"
-                        className="flex-start text-secondary-200 duration-500 ease-in-out hover:text-slate-400"
+                        className="flex-start text-secondary-200 duration-500 ease-in-out hover:text-secondary-300"
                       >
                         <HiChevronRight /> {t("footer.ourAgents")}
                       </Link>
@@ -149,7 +149,7 @@ const Footer = () => {
                     <div className="">
                       <Link
                         href="mailto:info@alasmaproperties.com"
-                        className="text-secondary-200 duration-500 ease-in-out hover:text-slate-400"
+                        className="text-secondary-200 duration-500 ease-in-out hover:text-secondary-300"
                       >
                         {companyInfo.email}
                       </Link>
@@ -174,7 +174,7 @@ const Footer = () => {
                     <div dir="ltr">
                       <Link
                         href={`tel:${companyInfo.phone.replace(/\s/g, "")}`}
-                        className="text-secondary-200 duration-500 ease-in-out hover:text-slate-400"
+                        className="text-secondary-200 duration-500 ease-in-out hover:text-secondary-300"
                       >
                         {companyInfo.phone}
                       </Link>

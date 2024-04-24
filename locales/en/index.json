@@ -49,8 +49,13 @@
     "home": {
       "searchNow": "Search Now",
       "findHome": "Find Your Dream Home",
-      "findHomeSubtitle": "Find a variety of properties that suit you very easily, forget all difficulties in finding a residence for you"
-    },
+      "findHomeSubtitle": "Find a variety of properties that suit you very easily, forget all difficulties in finding a residence for you",
+      "latestProperties": "Discover the latest properties",
+      "latestPropertiesMsg": "A great plateform to buy, sell and rent your properties",
+      "findCategories": "Find your categories",
+      "findListing": "Find your dream property with our listing",
+      "listing": "listing"
+   },
     "about": {
       "title": "About Al Asma",
       "comment": "Our Vision is to achieve 100% customer satisfaction by providing high quality services at reasonable cost. Our vision for the future is to strive to become an entity in the solutions of employment-based and commercial services companies,capable of demanding an unconditional response to the target position. We are always ready to move our achievements to the next level We are constantly growing and we would like to keep pace with growth.",

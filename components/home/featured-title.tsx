@@ -1,13 +1,17 @@
 import React from "react"
 import Tooltip from "../shared/tooltip"
+import { useTranslations } from "next-intl"
 
 const FeaturedTitle = () => {
+  const t = useTranslations()
   return (
     <div className="flex-center flex-col">
       <div className="flex-center flex-col text-center">
-        <h1 className="sm:h1-bold h2-bold pb-2 pt-9">Discover the latest properties</h1>
-        <h4 className="h5-bold pb-2 text-slate-400">
-          A great plateform to buy, sell and rent your properties
+        <h1 className="sm:h1-bold h3-bold pb-2 pt-9">
+          {t("pages.home.latestProperties")}
+        </h1>
+        <h4 className="h5-bold pb-2 text-secondary-300">
+          {t("pages.home.latestPropertiesMsg")}
         </h4>
       </div>
 
