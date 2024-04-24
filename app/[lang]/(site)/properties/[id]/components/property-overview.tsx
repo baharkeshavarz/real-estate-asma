@@ -28,14 +28,14 @@ const PropertyOverview = ({ property }: PropertyOverviewProps) => {
   return (
     <div className="flex-start flex-1 flex-col">
       <Card>
-        <OverviewTitle title="Property Description" />
+        <OverviewTitle title={t("property.propertyDescription")}/>
         <div className="body-regular py-2 text-justify text-secondary-800">
           {property.description}
         </div>
       </Card>
 
       <Card>
-        <OverviewTitle title="Property Details" />
+        <OverviewTitle title={t("property.propertyDetails")} />
         <div className="grid grid-cols-1 gap-x-14 gap-y-3 px-2 pt-4 sm:grid-cols-2">
           <div className="flex-between">
             <p className="base-medium">{t("property.propertyID")}</p>
@@ -90,7 +90,7 @@ const PropertyOverview = ({ property }: PropertyOverviewProps) => {
       </Card>
 
       <Card>
-        <OverviewTitle title="Featured" />
+        <OverviewTitle title={t("property.featured")}/> 
         <div className="grid grid-cols-1 gap-x-14 gap-y-3 px-2 pt-4 sm:grid-cols-2">
           <FeaturedLinearCard title="Air Conditioning" icon={HiCheck} />
           <FeaturedLinearCard title="Lawn" icon={HiCheck} />
@@ -106,20 +106,20 @@ const PropertyOverview = ({ property }: PropertyOverviewProps) => {
       </Card>
 
       <Card>
-        <OverviewTitle title="Map location" />
+        <OverviewTitle title={t("property.mapLocation")} />
         <div className="space-y-3 pt-4">
           <div className="flex-between">
-            <p className="base-medium">Address</p>
+            <p className="base-medium">{t("forms.address")}</p>
             <p className="body-regular">10425 Tabor St</p>
           </div>
 
           <div className="flex-between">
-            <p className="base-medium">City</p>
+            <p className="base-medium">{t("forms.city")}</p>
             <p className="body-regular">Los Angeles</p>
           </div>
 
           <div className="flex-between">
-            <p className="base-medium">State/county</p>
+            <p className="base-medium">{t("forms.stateCcounty")}</p>
             <p className="body-regular">California</p>
           </div>
         </div>

@@ -25,7 +25,7 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
           />
         </Link>
         <span className="small-medium absolute bottom-2 left-1 rounded-sm bg-white p-2">
-          For rent
+          {t("property.forRent")}
         </span>
       </div>
       <div className="card-details flex-1 px-5">

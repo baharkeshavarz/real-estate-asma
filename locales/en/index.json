@@ -28,7 +28,26 @@
     "minPrice": "Min Price",
     "maxPrice": "Max Price",
     "searchGlobally": "Search Globally",
-    "chooseCategory": "Choose Category"
+    "chooseCategory": "Choose Category",
+    "address": "Address",
+    "city": "City",
+    "stateCcounty": "State/county",
+    "nationality": "Nationality",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "mobileNumber": "Mobile Number",
+    "emailAddress": "Email Address",
+    "submit": "Submit",
+    "close": "Close",
+    "chooseYourNationality": "Choose Your Nationality"
+  },
+  "formErrors": {
+    "characters": "characters",
+    "isRequired": "This field is required",
+    "mustBeAtLeast": "This field must be at least",
+    "invalidPhoneNumber": "The phone number is not valid",
+    "invalidEmail": "The email address is not valid"
+
   },
   "footer": {
     "explore": "Explore",
@@ -52,6 +71,8 @@
     "propertySize": "Property Size",
     "propertyType": "Property Type",
     "propertyStatus": "Property Status",
+    "propertyDescription": "Property Description",
+    "propertyDetails": "Property Details",
     "beds": "Beds",
     "baths": "Baths",
     "sqf": "sqf",
@@ -73,7 +94,10 @@
     "max": "Max",
     "from": "From",
     "to": "To",
-    "resetAllFilters": "Reset all filters"
+    "resetAllFilters": "Reset all filters",
+    "featured": "Featured",
+    "mapLocation": "Map location",
+    "haveQuestion": "Have Question ? Get in touch!"
   },
   "pages": {
     "home": {

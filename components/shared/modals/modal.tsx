@@ -2,6 +2,7 @@
 
 import { HiMiniXMark } from "react-icons/hi2"
 import { useEffect, useState } from "react"
+import { useTranslations } from "next-intl"
 
 type ModalProps = {
   children: React.ReactNode
@@ -19,6 +20,7 @@ const Modal = ({
   open,
   width = defaultWidth
 }: ModalProps) => {
+  const t = useTranslations()
   const [isOpen, setIsOpen] = useState(open)
   useEffect(() => {
     setIsOpen(open)
@@ -41,7 +43,7 @@ const Modal = ({
                   className="flex-center rounded-md bg-black p-2 text-sm text-white transition-all delay-75 hover:bg-black/70"
                 >
                   <HiMiniXMark />
-                  Close
+                  {t("forms.close")}
                 </button>
               </div>
               <div className={`${defaultWidth} ${width}`}>

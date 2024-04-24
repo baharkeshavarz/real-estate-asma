@@ -1,10 +1,14 @@
 import React from "react"
 import { HiOutlinePhone } from "react-icons/hi"
+import { useTranslations } from "next-intl"
 
 const HelperCenter = () => {
+  const t = useTranslations()
   return (
     <div className="flex flex-col pt-5 text-black">
-      <p className="paragraph-medium text-center">Have Question ? Get in touch!</p>
+      <p className="paragraph-medium text-center">
+        {t("property.haveQuestion")}
+      </p>
       <div className="pt-3">
         <button
           type="submit"
@@ -14,7 +18,7 @@ const HelperCenter = () => {
             size={18}
             className="text-primary-800 group-hover:text-secondary-800"
           />
-          Contact us
+          {t("navbar.contact")}
         </button>
       </div>
     </div>

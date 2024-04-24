@@ -5,19 +5,21 @@ import Select from "react-select"
 import { useState } from "react"
 import FormInput from "../shared/inputs/input"
 import { phoneRegex } from "@/lib/general"
+import { useTranslations } from "next-intl"
 
 const UserDataForm = () => {
+  const t = useTranslations()
   const [nationalities, setNationalities] = useState([])
 
   const leadSchema = z.object({
     nationality: z.string(),
-    name: z.string().min(6, "must be at least 6 chars"),
-    family: z.string().min(6, "must be at least 6 chars"),
-    mobile: z.string().regex(phoneRegex, "Invalid Number!"),
-    email: z
+    name: z.string().min(2, `${t("formErrors.mustBeAtLeast")} 2 ${t("formErrors.characters")}`),
+    family: z.string().min(2, `${t("formErrors.mustBeAtLeast")} 2 ${t("formErrors.characters")}`),
+    mobile: z.string().regex(phoneRegex, t("formErrors.invalidPhoneNumber")),
+    email: z 
       .string()
-      .min(1, { message: "This field has to be filled." })
-      .email("This is not a valid email.")
+      .min(1, { message: t("formErrors.isRequired")})
+      .email(t("formErrors.invalidEmail")),
   })
 
   type UserInfoFormData = z.infer<typeof leadSchema>
@@ -45,14 +47,14 @@ const UserDataForm = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-2">
           <label htmlFor="lead" className="body-regular">
-             Nationality:
+            {t("forms.nationality")}:
           </label>
           <div className="mt-3">
             <Select
               options={nationalities || []}
               onChange={() => {}}
-              autoFocus={true}
-              placeholder="Choose Your Nationality"
+              autoFocus={true} 
+              placeholder={t("forms.chooseYourNationality")}
               className="body-regular"
             />
           </div>
@@ -67,7 +69,7 @@ const UserDataForm = () => {
         <div className="mt-4">
           <FormInput
             name="name"
-            label="First Name:"
+            label={`${t("forms.firstName")}:`}
             register={register}
             error={errors.name}
           />
@@ -76,7 +78,7 @@ const UserDataForm = () => {
         <div className="mt-4">
           <FormInput
             name="family"
-            label="Last Name:"
+            label={`${t("forms.lastName")}:`}
             register={register}
             error={errors.family}
           />
@@ -85,7 +87,7 @@ const UserDataForm = () => {
         <div className="mt-4">
           <FormInput
             name="mobile"
-            label="Mobile Number:"
+            label={`${t("forms.mobileNumber")}:`}
             register={register}
             error={errors.mobile}
           />
@@ -94,7 +96,7 @@ const UserDataForm = () => {
         <div className="mt-4">
           <FormInput
             name="email"
-            label="Email Address:"
+            label={`${t("forms.emailAddress")}:`}
             register={register}
             error={errors.email}
           />
@@ -108,7 +110,7 @@ const UserDataForm = () => {
                        tracking-wide text-gray-700 transition-colors duration-200 hover:bg-primary-900 hover:text-white
                      focus:bg-black focus:text-white focus:outline-none"
           >
-            Submit
+            {t("forms.submit")}
           </button>
         </div>
       </form>

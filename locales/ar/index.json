@@ -28,7 +28,25 @@
     "minPrice": "سعر دقيقة",
     "maxPrice": "السعر الأقصى",
     "searchGlobally": "البحث على مستوى العالم",
-    "chooseCategory": "اختر الفئة"
+    "chooseCategory": "اختر الفئة",
+    "address": "عنوان",
+    "city": "مدينة",
+    "stateCcounty": "ولاية / مقاطعة",
+    "nationality": "جنسية",
+    "firstName": "الاسم الأول",
+    "lastName": "اسم العائلة",
+    "mobileNumber": "رقم الهاتف المحمول",
+    "emailAddress": "عنوان البريد الإلكتروني",
+    "submit": "يُقدِّم",
+    "close": "يغلق",
+    "chooseYourNationality": "اختر جنسيتك"
+  },
+  "formErrors": {
+    "characters": "حرف",
+    "isRequired": "هذه الخانة مطلوبه",
+    "mustBeAtLeast": "يجب أن يكون هذا الحقل على الأقل",
+    "invalidPhoneNumber": "رقم الهاتف غير صالح",
+    "invalidEmail": "عنوان البريد الإلكتروني غير صالح"
   },
   "footer": {
     "explore": "يستكشف",
@@ -52,6 +70,8 @@
     "propertySize": "حجم العقار",
     "propertyType": "نوع الملكية",
     "propertyStatus": "حالة الملكية",
+    "propertyDescription": "وصف العقار",
+    "propertyDetails": "تفاصيل اوضح",
     "beds": "سرير",
     "baths": "الحمامات",
     "sqf": "قدم مربع",
@@ -71,7 +91,10 @@
     "squareFeet": "قدم مربع",
     "min": "الحد الأدنى",
     "max": "أقصى",
-    "resetAllFilters": "إعادة ضبط جميع المرشحات"
+    "resetAllFilters": "إعادة ضبط جميع المرشحات",
+    "featured": "مميز",
+    "mapLocation": "خريطة الموقع",
+    "haveQuestion": "لديك سؤال ؟ ابقى على تواصل!"
    },
   "pages": {
     "home": {
