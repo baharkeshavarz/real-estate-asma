@@ -20,7 +20,9 @@
     "buy": "يشتري",
     "sell": "يبيع",
     "rent": "إيجار",
-    "learnMore": "يتعلم أكثر"
+    "learnMore": "يتعلم أكثر",
+    "search": "يبحث",
+    "all": "الجميع"
   },
   "forms": {
     "minPrice": "سعر دقيقة",
@@ -45,6 +47,32 @@
     "enterEmail": "أدخل بريدك الإلكتروني",
     "subscribeBtn": "يشترك"
   },
+  "property": {
+    "propertyID": "معرف العقار",
+    "propertySize": "حجم العقار",
+    "propertyType": "نوع الملكية",
+    "propertyStatus": "حالة الملكية",
+    "beds": "سرير",
+    "baths": "الحمامات",
+    "sqf": "قدم مربع",
+    "sqft": "قدم مربع",
+    "price": "سعر",
+    "bathrooms": "الحمامات",
+    "bedrooms": "غرف نوم",
+    "garage": "كراج",
+    "garageSize": "حجم المرآب",
+    "yearBuilt": "بنيت عام",
+    "forSale": "للبيع",
+    "forRent": "للإيجار",
+    "listingStatus": "حالة الاستماع",
+    "priceRange": "نطاق السعر",
+    "location": "موقع",
+    "allCities": "جميع المدن",
+    "squareFeet": "قدم مربع",
+    "min": "الحد الأدنى",
+    "max": "أقصى",
+    "resetAllFilters": "إعادة ضبط جميع المرشحات"
+   },
   "pages": {
     "home": {
       "searchNow": "ابحث الآن",

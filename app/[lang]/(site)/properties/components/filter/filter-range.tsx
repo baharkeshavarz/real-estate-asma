@@ -1,10 +1,14 @@
 import React from "react"
 import FilterTitle from "./filter-title"
 
-const FilterPriceRange = () => {
+interface FilterPriceRangeProps {
+  t: any
+}
+
+const FilterPriceRange = ({ t }: FilterPriceRangeProps) => {
   return (
     <div className="flex flex-col">
-      <FilterTitle title="Price Range"/>
+      <FilterTitle title={t("property.priceRange")}/>
       <div className="relative mb-6">
         <label htmlFor="labels-range-input" className="sr-only">
           Labels range

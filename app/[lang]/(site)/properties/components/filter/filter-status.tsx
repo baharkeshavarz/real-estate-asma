@@ -1,10 +1,14 @@
 import React from "react"
 import FilterTitle from "./filter-title"
 
-const FilterStatus = () => {
+interface FilterStatusProps {
+  t: any
+}
+
+const FilterStatus = ({ t }: FilterStatusProps) => {
   return (
     <div className="flex flex-col">
-      <FilterTitle title="Listing Status"/>
+      <FilterTitle title={t("property.listingStatus")}/>
       <ul className="paragraph-regular w-full rounded-lg text-secondary-800">
         <li className="w-full">
           <div className="flex items-center">
@@ -13,13 +17,13 @@ const FilterStatus = () => {
               type="radio"
               value=""
               name="list-radio"
-              className="h-5 w-5 text-black focus:ring-2 focus:ring-black accent-black no-focus"
+              className="no-focus h-5 w-5 text-black accent-black focus:ring-2 focus:ring-black"
             />
             <label
               htmlFor="list-radio-license"
-              className="body-regular ms-2 w-full py-2.5 text-secondary-800 cursor-pointer"
+              className="body-regular ms-2 w-full cursor-pointer py-2.5 text-secondary-800"
             >
-              All
+              {t("general.all")}
             </label>
           </div>
         </li>
@@ -30,13 +34,13 @@ const FilterStatus = () => {
               type="radio"
               value=""
               name="list-radio"
-              className="h-5 w-5 text-black focus:ring-2 focus:ring-black accent-black no-focus"
+              className="no-focus h-5 w-5 text-black accent-black focus:ring-2 focus:ring-black"
             />
             <label
               htmlFor="list-radio-id"
               className="body-regular ms-2 w-full py-2.5 text-secondary-800"
             >
-              Buy
+              {t("general.buy")}
             </label>
           </div>
         </li>
@@ -47,13 +51,13 @@ const FilterStatus = () => {
               type="radio"
               value=""
               name="list-radio"
-              className="h-5 w-5 text-black focus:ring-2 focus:ring-black accent-black no-focus"
+              className="no-focus h-5 w-5 text-black accent-black focus:ring-2 focus:ring-black"
             />
             <label
               htmlFor="list-radio-military"
               className="body-regular ms-2 w-full py-2.5 text-secondary-800"
             >
-              Rent
+              {t("general.rent")}
             </label>
           </div>
         </li>

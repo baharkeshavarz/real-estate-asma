@@ -20,7 +20,9 @@
     "buy": "Buy",
     "sell": "Sell",
     "rent": "Rent",
-    "learnMore": "Learn More"
+    "learnMore": "Learn More",
+    "search": "Search",
+    "all": "All"
   },
   "forms": {
     "minPrice": "Min Price",
@@ -44,6 +46,34 @@
     "subscribeMsg": "Subscribe to get latest updates and information",
     "enterEmail": "Enter your email",
     "subscribeBtn": "subscribe"
+  },
+  "property": {
+    "propertyID": "Property ID",
+    "propertySize": "Property Size",
+    "propertyType": "Property Type",
+    "propertyStatus": "Property Status",
+    "beds": "Beds",
+    "baths": "Baths",
+    "sqf": "sqf",
+    "sqft": "sqft",
+    "price": "Price",
+    "bathrooms": "Bathrooms",
+    "bedrooms": "Bedrooms",
+    "garage": "Garage",
+    "garageSize": "Garage Size",
+    "yearBuilt": "Year Built",
+    "forSale": "For Sale",
+    "forRent": "For Rent",
+    "listingStatus": "Listing Status",
+    "priceRange": "Price Range",
+    "location": "Location",
+    "allCities": "All Cities",
+    "squareFeet": "Square Feet",
+    "min": "Min",
+    "max": "Max",
+    "from": "From",
+    "to": "To",
+    "resetAllFilters": "Reset all filters"
   },
   "pages": {
     "home": {

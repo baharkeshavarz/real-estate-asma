@@ -5,12 +5,14 @@ import PropertyBadge from "./property-badge"
 import { LiaBedSolid } from "react-icons/lia"
 import { LiaBathSolid } from "react-icons/lia"
 import { SlSizeActual } from "react-icons/sl"
+import { useTranslations } from "next-intl"
 
 interface PropertyCardProps {
   property: PropertyItem
 }
 
 const PropertyCard = ({ property }: PropertyCardProps) => {
+  const t = useTranslations()
   return (
     <div className="flex flex-col rounded-md bg-white p-5 shadow-xl">
       <div className="relative mx-auto h-[200px] w-full overflow-hidden rounded-lg">
@@ -28,13 +30,21 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
         {property.price} {property.currency}
       </h2>
       <div className="flex-between pt-5">
-        <PropertyBadge icon={LiaBedSolid} title="Beds" value={property.beds} />
+        <PropertyBadge
+          icon={LiaBedSolid}
+          title={t("property.beds")}
+          value={property.beds}
+        />
         <PropertyBadge
           icon={LiaBathSolid}
-          title="Baths"
+          title={t("property.baths")}
           value={property.baths}
         />
-        <PropertyBadge icon={SlSizeActual} title="sqf" value={property.sqft} />
+        <PropertyBadge
+          icon={SlSizeActual}
+          title={t("property.sqf")}
+          value={property.sqft}
+        />
       </div>
     </div>
   )

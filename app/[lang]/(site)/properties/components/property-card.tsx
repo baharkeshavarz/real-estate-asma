@@ -5,12 +5,14 @@ import { LiaBedSolid } from "react-icons/lia"
 import { LiaBathSolid } from "react-icons/lia"
 import { SlSizeActual } from "react-icons/sl"
 import PropertyBadge from "@/components/home/property-badge"
+import { useTranslations } from "next-intl"
 
 interface PropertyCardProps {
   property: PropertyItem
 }
 
 const PropertyCard = ({ property }: PropertyCardProps) => {
+  const t = useTranslations()
   return (
     <div className="flex flex-col rounded-md bg-white shadow-md sm:flex-row">
       <div className="relative h-[200px] w-full overflow-hidden rounded-lg sm:flex-1">
@@ -38,19 +40,19 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
         <div className="flex-start gap-x-3 pb-3 pt-5 sm:pb-0">
           <PropertyBadge
             icon={LiaBedSolid}
-            title="Beds"
+            title={t("property.beds")}
             size={16}
             value={property.beds}
           />
           <PropertyBadge
             icon={LiaBathSolid}
-            title="Baths"
+            title={t("property.baths")}
             size={16}
             value={property.baths}
           />
           <PropertyBadge
             icon={SlSizeActual}
-            title="sqf"
+            title={t("property.sqf")}
             size={16}
             value={property.sqft}
           />

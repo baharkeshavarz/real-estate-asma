@@ -2,11 +2,13 @@
 
 import { useState } from "react"
 import FilterTitle from "./filter-title"
+import { useLocale } from "next-intl"
 
 interface FilterItemCountsProps {
   title: string
 }
 const FilterItemCounts = ({ title }: FilterItemCountsProps) => {
+  const lang = useLocale();
   const [selectedItem, setSelectedItem] = useState(0)
   const items = [
     {
@@ -47,9 +49,9 @@ const FilterItemCounts = ({ title }: FilterItemCountsProps) => {
         {items.map((item, index) => (
           <div
             className={`selection cursor-pointer border border-gray-500 p-2
-                       ${index === 0 ? " rounded-l-lg " : ""}
-                       ${index === items.length - 1 ? " rounded-r-lg" : ""}
-                       ${selectedItem === index ? "border-[3px] border-r-2" :  index !== items.length - 1 ?? " border-r-0"}
+                       ${index === 0 ? lang === "en" ? "rounded-l-lg" : "rounded-r-lg" : ""}
+                       ${index === items.length - 1 ? lang === "en" ? "rounded-r-lg" : "rounded-l-lg" : ""}
+                       ${selectedItem === index ? "border-[3px] border-r-2" : index !== items.length - 1 ?? " border-r-0"}
              `}
           >
             <input

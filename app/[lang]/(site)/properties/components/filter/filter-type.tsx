@@ -1,7 +1,11 @@
 import React from "react"
 import FilterTitle from "./filter-title"
 
-const FilterType = () => {
+interface FilterTypeProps {
+  t: any
+}
+
+const FilterType = ({ t }: FilterTypeProps) => {
   const items = [
     {
       id: "type-1",
@@ -26,7 +30,7 @@ const FilterType = () => {
   ]
   return (
     <div className="flex flex-col">
-      <FilterTitle title="Property Type"/>
+      <FilterTitle title={t("property.propertyType")}/>
       <ul className="paragraph-regular w-full rounded-lg text-secondary-800">
         {items.map(item => (
           <li key={item.id}>
