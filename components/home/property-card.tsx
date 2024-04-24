@@ -5,7 +5,7 @@ import PropertyBadge from "./property-badge"
 import { LiaBedSolid } from "react-icons/lia"
 import { LiaBathSolid } from "react-icons/lia"
 import { SlSizeActual } from "react-icons/sl"
-import { useTranslations } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
 
 interface PropertyCardProps {
   property: PropertyItem
@@ -13,12 +13,13 @@ interface PropertyCardProps {
 
 const PropertyCard = ({ property }: PropertyCardProps) => {
   const t = useTranslations()
+  const lang= useLocale();
   return (
     <div className="flex flex-col rounded-md bg-white p-5 shadow-xl">
       <div className="relative mx-auto h-[200px] w-full overflow-hidden rounded-lg">
         <Image src={property.img} alt={property.title} fill />
         <Link
-          href={`/en/properties/${property.id}`}
+          href={`/${lang}/properties/${property.id}`}
           className="absolute left-0 top-0 z-10 h-full w-full bg-black opacity-0 transition-all duration-300 hover:opacity-40"
         ></Link>
       </div>
