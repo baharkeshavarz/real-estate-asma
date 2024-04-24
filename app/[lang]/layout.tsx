@@ -7,7 +7,9 @@ import EmotionCache from "@/providers/emotion-cache"
 import ModalProvider from "@/providers/modal-provider"
 import { NextIntlClientProvider, useMessages } from "next-intl"
 import { Locale, languages } from "@/navigation"
-import { unstable_setRequestLocale } from "next-intl/server"
+import { userAgent } from "next/server"
+import { headers } from "next/headers"
+import AppProvider from "@/providers/app-provider"
 
 // Handle the font family
 const roboto = Roboto({
@@ -26,14 +28,10 @@ export const metadata: Metadata = {
   description: "Al Asma App"
 }
 
-// export  function generateStaticParams() {
-//   return supportedLanguages.map(locale => ({ lang: locale }))
-// }
-
 export default function RootLayout({ children, params }: ChildrenLocalProps) {
   const lang = params.lang.toString()
   const messages = useMessages()
-  unstable_setRequestLocale(params.lang)
+  const reqUserAgent = userAgent({ headers: headers() })
   return (
     <html
       lang={lang}
@@ -50,11 +48,13 @@ export default function RootLayout({ children, params }: ChildrenLocalProps) {
           <NextIntlClientProvider messages={messages} locale={params.lang}>
             <ToastProvider />
             <ModalProvider />
-            {lang === "ar" ? (
-              <EmotionCache>{children}</EmotionCache>
-            ) : (
-              <> {children} </>
-            )}
+            <AppProvider userAgent={reqUserAgent}>
+              {lang === "ar" ? (
+                <EmotionCache>{children}</EmotionCache>
+              ) : (
+                <> {children} </>
+              )}
+            </AppProvider>
           </NextIntlClientProvider>
         </main>
       </body>

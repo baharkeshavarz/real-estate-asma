@@ -1,7 +1,6 @@
 "use client"
 
 import { Swiper, SwiperSlide } from "swiper/react"
-import { useMediaQuery } from "@uidotdev/usehooks";
 
 // Import Swiper styles
 import "swiper/css"
@@ -12,14 +11,11 @@ import { useTranslations } from "next-intl"
 // import required modules
 import { Navigation } from "swiper/modules"
 import NeighborhoodCard from "./neighborhood-card"
+import { useAppContext } from "@/constants/hooks/useAppContext";
 
 const NeighborhoodListing = () => {
   const t = useTranslations()
-  let isSmallDevice = false;
-  if (typeof window !== 'undefined') {
-    isSmallDevice = useMediaQuery("only screen and (max-width : 768px)");
-  }
-
+  const { isMobile } = useAppContext();
   const neighborhoods = [
     {
       id: 1,
@@ -76,7 +72,7 @@ const NeighborhoodListing = () => {
 
       <div className="mx-auto grid w-full max-w-6xl pt-8">
         <Swiper
-          slidesPerView={isSmallDevice ? 2 : 5}
+          slidesPerView={isMobile ? 2 : 5}
           centeredSlides={false}
           spaceBetween={30}
           pagination={{
