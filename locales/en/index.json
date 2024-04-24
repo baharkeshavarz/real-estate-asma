@@ -35,7 +35,14 @@
     "ourAgents": "Our Agents",
     "rights": "All Rights Reserved",
     "viewGoogleMap": "View on Google map",
-    "about": "We are always ready to move our achievements to the next level We are constantly growing and we would like to keep pace with growth"
+    "about": "We are always ready to move our achievements to the next level We are constantly growing and we would like to keep pace with growth",
+    "contactDetails": "Contact Details"
+  },
+  "newsletter": {
+    "subscribe": "Subscribe to Newsletter!",
+    "subscribeMsg": "Subscribe to get latest updates and information",
+    "enterEmail": "Enter your email",
+    "subscribeBtn": "subscribe"
   },
   "pages": {
     "home": {

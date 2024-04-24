@@ -60,3 +60,10 @@ export const houses = [
       img: "/assets/images/properties/property-4.webp"
     }
   ]
+
+  export const companyInfo = {
+    "email": "info@alasmaproperties.com",
+    "phone": "+968 96078881"
+  }
+
+

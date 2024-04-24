@@ -6,6 +6,7 @@ import NewsLetter from "./NewsLetter"
 import { SocialMedia } from "./SocialMedia"
 import { links } from "@/constants/navbar"
 import { useTranslations } from "next-intl"
+import { companyInfo } from "@/constants/general"
 
 const Footer = () => {
   const t = useTranslations()
@@ -19,10 +20,10 @@ const Footer = () => {
                 <div className="grid grid-cols-1 items-center gap-[30px] md:grid-cols-2">
                   <div className="z-1 text-center md:text-start">
                     <h3 className="md:paragraph-medium text-2xl font-medium leading-normal text-black md:leading-normal">
-                      Subscribe to Newsletter!
+                      {t("newsletter.subscribe")}
                     </h3>
-                    <p className="body-medium py-2 text-slate-400">
-                      Subscribe to get latest updates and information.
+                    <p className="body-medium py-2 text-secondary-300">
+                      {t("newsletter.subscribeMsg")}
                     </p>
                   </div>
                   <NewsLetter />
@@ -99,7 +100,7 @@ const Footer = () => {
 
                 <div className="md:col-span-4 lg:col-span-3">
                   <h5 className="font-semibold tracking-[1px] text-gray-100">
-                    Contact Details
+                    {t("footer.contactDetails")}
                   </h5>
                   <div className="mt-6 flex">
                     <svg
@@ -150,7 +151,7 @@ const Footer = () => {
                         href="mailto:info@alasmaproperties.com"
                         className="text-secondary-200 duration-500 ease-in-out hover:text-slate-400"
                       >
-                        info@alasmaproperties.com
+                        {companyInfo.email}
                       </Link>
                     </div>
                   </div>
@@ -170,12 +171,12 @@ const Footer = () => {
                     >
                       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                     </svg>
-                    <div className="">
+                    <div dir="ltr">
                       <Link
-                        href="tel:+96896078881"
+                        href={`tel:${companyInfo.phone.replace(/\s/g, "")}`}
                         className="text-secondary-200 duration-500 ease-in-out hover:text-slate-400"
                       >
-                        +968 96078881
+                        {companyInfo.phone}
                       </Link>
                     </div>
                   </div>
@@ -191,11 +192,6 @@ const Footer = () => {
             <div className="text-center md:text-start">
               <p className="mb-0 text-gray-300">
                 © 2024 Al Asma {""} {t("footer.rights")}
-                {/* <i className="mdi mdi-heart text-red-600"></i> by{" "}
-                <Link href="#" target="_blank" className="text-reset">
-                  Designer name
-                </Link>
-                . */}
               </p>
             </div>
             <SocialMedia />
