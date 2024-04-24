@@ -35,13 +35,13 @@ const Menus = () => {
 
       {nav && (
         <ul className="absolute left-0 top-0 mt-14 flex w-full flex-col items-center justify-center bg-white text-secondary-800">
-          {links.map(({ id, link }) => (
+          {links.map(({ id, link, title }) => (
             <li
               key={id}
-              className="cursor-pointer px-4 py-3 text-2xl capitalize"
+              className="cursor-pointer px-4 py-3 capitalize paragraph-regular"
             >
               <Link onClick={() => setNav(!nav)} href={link}>
-                {link}
+                 {t(`navbar.${title}`)}
               </Link>
             </li>
           ))}
