@@ -46,11 +46,11 @@ const CopntactUs = () => {
 
         <div className="contact-form p-3">
           <Card>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 p-3">
               <div className="flex-between">
                 <div>
                   <h1 className="h2-bold">{t("navbar.contact")}</h1>
-                  <p className="pb-3 pt-1 text-secondary-800 sm:body-regular small-regular">
+                  <p className="sm:body-regular small-regular pb-3 pt-1 text-secondary-800">
                     {t("pages.contact.response")}
                   </p>
                 </div>

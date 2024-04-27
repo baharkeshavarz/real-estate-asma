@@ -50,7 +50,7 @@ const SearchForm = () => {
       <div className="flex-center mx-auto w-full py-4 sm:w-64">
         <button
           className="flex-center body-regular min-h-[56px] w-full rounded-md bg-primary-500
-         px-2 py-2 text-base text-gray-700 transition-all duration-500 ease-in-out hover:bg-primary-900"
+                     px-2 py-2 text-base text-gray-700 transition-all duration-500 ease-in-out hover:bg-primary-900"
           onClick={() => {}}
           type="button"
         >
