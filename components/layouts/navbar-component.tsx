@@ -1,7 +1,7 @@
 import React from "react"
 import { Logo } from "./logo-component"
-import Menus from "./menus"
 import { UserAccess } from "./user-access"
+import Menus from "./menus-component"
 
 const NavBar = () => {
   return (

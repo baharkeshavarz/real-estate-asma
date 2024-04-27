@@ -10,7 +10,7 @@ import { useTranslations, useLocale } from "next-intl"
 const Menus = () => {
   const [nav, setNav] = useState(false)
   const t = useTranslations()
-  const lang = useLocale();
+  const lang = useLocale()
   return (
     <div className="nav flex w-full px-4 text-white">
       <ul className="hidden md:flex">
@@ -39,10 +39,10 @@ const Menus = () => {
           {links.map(({ id, link, title }) => (
             <li
               key={id}
-              className="cursor-pointer px-4 py-3 capitalize paragraph-regular"
+              className="paragraph-regular cursor-pointer px-4 py-3 capitalize"
             >
               <Link onClick={() => setNav(!nav)} href={`/${lang}/${link}`}>
-                 {t(`navbar.${title}`)}
+                {t(`navbar.${title}`)}
               </Link>
             </li>
           ))}
