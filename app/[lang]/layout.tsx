@@ -9,9 +9,9 @@ import { Locale, languages } from "@/navigation"
 import { userAgent } from "next/server"
 import { headers } from "next/headers"
 import AppProvider from "@/providers/app-provider"
-import localFont from "@next/font/local"
+import localFont from "next/font/local"
 
-// Handle the font family
+// Handle the font family locally
 const poppins = localFont({
   src: [
     {
@@ -43,6 +43,7 @@ const notoSansArabic = localFont({
 export const metadata: Metadata = {
   title: "Al Asma",
   description: "Al Asma App"
+  
 }
 
 export default function RootLayout({ children, params }: ChildrenLocalProps) {
