@@ -1,5 +1,5 @@
-import NavBar from "@/components/layouts/navbar"
-import Footer from "@/components/layouts/footer/footer"
+import NavBar from "@/components/layouts/navbar-component"
+import Footer from "@/components/layouts/footer/footer-component"
 import { ChildrenLocalProps } from "@/types"
 
 export default function MainLayout({
