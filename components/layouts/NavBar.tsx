@@ -1,15 +1,20 @@
 import React from "react"
 import { Logo } from "./Logo"
-import Menus from "./Menus"
-import { UserAccess } from "./UserAccess"
+import Menus from "./menus"
+import { UserAccess } from "./user-access"
 
 const NavBar = () => {
   return (
-    <div className="flex-between fixed z-50 h-16 w-full bg-white px-5">
+    <div className="flex-between fixed z-50 h-16 w-full bg-white px-2">
       <Logo classes="flex items-center gap-1" />
-      <div className="flex-center">
+      <div className="sm:flex-center hidden">
         <Menus />
         <UserAccess />
+      </div>
+
+      <div className="flex-start sm:hidden">
+        <UserAccess />
+        <Menus />
       </div>
     </div>
   )

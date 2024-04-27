@@ -46,7 +46,7 @@ const LocaleSwitcher = ({ classes }: LocaleSwitcherProps) => {
   return (
     <div className={`flex-center mx-1 h-full ${classes}`}>
       <HiOutlineGlobeAlt size={20} />
-      <select className="flex-start body-regular rounded-md bg-white p-2">
+      <select className="flex-start body-regular rounded-md bg-white p-1">
         {supportedLanguages.map(locale => (
           <option
             key={locale}
