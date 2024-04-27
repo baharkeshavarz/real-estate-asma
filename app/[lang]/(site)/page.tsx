@@ -1,6 +1,6 @@
 import React from "react"
 import { Metadata } from "next"
-import Search from "@/components/layouts/search"
+import Search from "@/components/layouts/search-component"
 import FeaturedProperties from "@/components/home/featured-properties"
 import About from "@/components/home/about"
 import NeighborhoodListing from "@/components/home/neighborhood-listing"
