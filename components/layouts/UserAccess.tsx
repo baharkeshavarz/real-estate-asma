@@ -3,6 +3,7 @@
 import { useModalStore } from "@/store/modalStore"
 import { LiaUserLockSolid } from "react-icons/lia"
 import { useTranslations } from "next-intl"
+import LocaleSwitcher from "./locale-switcher"
 
 export const UserAccess = () => {
   const { openModal } = useModalStore()
@@ -25,6 +26,8 @@ export const UserAccess = () => {
       >
         {t("general.bookProperty")}
       </button>
+
+      <LocaleSwitcher />
     </>
   )
 }

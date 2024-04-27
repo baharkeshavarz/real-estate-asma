@@ -38,6 +38,8 @@ const About = () => {
             <h4 className="mb-6 text-2xl font-semibold leading-normal md:text-3xl lg:leading-normal">
               {t("pages.about.title")}
             </h4>
+
+            
             <p className="max-w-xl text-justify leading-[25px] text-secondary-800">
               {t("pages.about.comment")}
             </p>
