@@ -67,6 +67,12 @@
     "enterEmail": "Enter your email",
     "subscribeBtn": "subscribe"
   },
+  "error404": {
+    "backHome": "Back to home",
+    "imageAlt": "404 Error",
+    "title": "Oh no... We lost this page",
+    "description": " We searched everywhere but couldn’t find what you’re looking for. Let’s find a better place for you to go."
+  },
   "property": {
     "propertyID": "Property ID",
     "propertySize": "Property Size",
@@ -129,5 +135,6 @@
       "messagePlaceholder": "Your message",
       "response": "We will respond as soon as we receive your message"
     }
+
   }
 }
