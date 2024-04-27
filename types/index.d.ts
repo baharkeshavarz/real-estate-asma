@@ -49,33 +49,6 @@ export interface SettingsProps {
   setSettings: Function
 }
 
-export interface WorkFlow {
-  icon: string
-  name: string
-  step: number
-  url: string
-  description: string
-}
-
-export interface PersonalInfo {
-  firstName: string
-  lastName: string
-  fatherName: string
-  birthDate: string
-  gender: number
-  userAddressId: number
-}
-
-export interface ProfileData {
-  birthDate: string
-  fatherName: string
-  firstName: string
-  gender: number
-  lastName: string
-  score: number
-  userAddressId: number
-}
-
 export interface TypeGroupItem {
   id: number
   name: string

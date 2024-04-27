@@ -62,6 +62,7 @@ export const houses = [
   ]
 
   export const companyInfo = {
+    "address": "Muscat, Oman",
     "email": "info@alasmaproperties.com",
     "phone": "+968 96078881"
   }

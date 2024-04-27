@@ -7,7 +7,7 @@ export const links = [
   {
     id: 2,
     title: "about",
-    link: "/"
+    link: "about"
   },
   {
     id: 3,
@@ -28,6 +28,6 @@ export const links = [
   {
     id: 6,
     title: "contact",
-    link: "/"
+    link: "contact"
   }
 ]

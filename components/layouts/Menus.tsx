@@ -5,11 +5,12 @@ import Link from "next/link"
 import React, { useState } from "react"
 import { FaBars, FaTimes } from "react-icons/fa"
 import { LiaUserLockSolid } from "react-icons/lia"
-import { useTranslations } from "next-intl"
+import { useTranslations, useLocale } from "next-intl"
 
 const Menus = () => {
   const [nav, setNav] = useState(false)
   const t = useTranslations()
+  const lang = useLocale();
   return (
     <div className="nav flex w-full px-4 text-white">
       <ul className="hidden md:flex">
@@ -40,7 +41,7 @@ const Menus = () => {
               key={id}
               className="cursor-pointer px-4 py-3 capitalize paragraph-regular"
             >
-              <Link onClick={() => setNav(!nav)} href={link}>
+              <Link onClick={() => setNav(!nav)} href={`/${lang}/${link}`}>
                  {t(`navbar.${title}`)}
               </Link>
             </li>

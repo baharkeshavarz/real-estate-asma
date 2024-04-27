@@ -33,6 +33,7 @@
     "city": "City",
     "stateCcounty": "State/county",
     "nationality": "Nationality",
+    "name": "Name",
     "firstName": "First Name",
     "lastName": "Last Name",
     "mobileNumber": "Mobile Number",
@@ -119,6 +120,14 @@
       "key3": "Innovation",
       "key4": "Transparency",
       "key5": "Teamwork"
+    },
+    "contact": {
+      "title": "Love to Hear From You",
+      "text": "We would like to hear your opinions and to answer any question or concern you have, please do not hesitate to contact us by filling this form",
+      "subject": "Subject",
+      "message": "Message",
+      "messagePlaceholder": "Your message",
+      "response": "We will respond as soon as we receive your message"
     }
   }
 }

@@ -1,10 +1,11 @@
 import Breadcrumb from "@/components/common/breadcrumb"
 import PropertyFilter from "../components/filter/property-filter"
 import PropertyList from "../components/property-list"
+import LayoutWrapper from "@/components/layouts/layout-wrapper"
 
 const PropertyResult = () => {
   return (
-    <div className="mx-auto flex min-h-screen max-w-5xl flex-col">
+    <LayoutWrapper>
       <div className="py-5">
         <Breadcrumb
           homeElement={"Search Properties"}
@@ -19,7 +20,7 @@ const PropertyResult = () => {
         <PropertyFilter />
         <PropertyList />
       </div>
-    </div>
+    </LayoutWrapper>
   )
 }
 
