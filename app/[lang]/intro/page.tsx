@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Logo } from "@/components/layouts/Logo"
+import { Logo } from "@/components/layouts/logo"
 import { useTranslations } from "next-intl"
 
 export default function Intro() {

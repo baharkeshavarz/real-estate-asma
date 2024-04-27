@@ -1,5 +1,5 @@
 import React from "react"
-import { Logo } from "../Logo"
+import { Logo } from "../logo"
 import { HiChevronRight } from "react-icons/hi2"
 import Link from "next/link"
 import NewsLetter from "./news-letter"
