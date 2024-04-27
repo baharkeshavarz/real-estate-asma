@@ -7,6 +7,7 @@ import { HiOutlinePhone } from "react-icons/hi"
 import { HiOutlineMailOpen } from "react-icons/hi"
 import ContactForm from "./contact-form"
 import { useTranslations } from "next-intl"
+import { HiOutlineAnnotation } from "react-icons/hi"
 
 const CopntactUs = () => {
   const t = useTranslations()
@@ -46,10 +47,16 @@ const CopntactUs = () => {
         <div className="contact-form p-3">
           <Card>
             <div className="flex flex-col gap-3">
-              <h1 className="h2-bold">{t("navbar.contact")}</h1>
-              <p className="pb-3 text-secondary-800">
-                {t("pages.contact.response")}
-              </p>
+              <div className="flex-between">
+                <div>
+                  <h1 className="h2-bold">{t("navbar.contact")}</h1>
+                  <p className="pb-3 pt-1 text-secondary-800 sm:body-regular small-regular">
+                    {t("pages.contact.response")}
+                  </p>
+                </div>
+
+                <HiOutlineAnnotation size={46} className="text-primary-500" />
+              </div>
               <ContactForm />
             </div>
           </Card>
