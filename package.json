@@ -17,6 +17,7 @@
     "@formatjs/intl-localematcher": "^0.4.0",
     "@heroicons/react": "^2.1.1",
     "@hookform/resolvers": "^3.3.4",
+    "@next/font": "^14.2.3",
     "@tailwindcss/typography": "^0.5.12",
     "@uidotdev/usehooks": "^2.4.1",
     "autoprefixer": "10.4.14",

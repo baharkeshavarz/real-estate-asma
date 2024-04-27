@@ -1,6 +1,5 @@
 import "./globals.css"
 import type { Metadata } from "next"
-import { Roboto, Noto_Sans_Arabic } from "next/font/google"
 import { ChildrenLocalProps } from "@/types"
 import ToastProvider from "@/providers/toast-provider"
 import EmotionCache from "@/providers/emotion-cache"
@@ -10,16 +9,34 @@ import { Locale, languages } from "@/navigation"
 import { userAgent } from "next/server"
 import { headers } from "next/headers"
 import AppProvider from "@/providers/app-provider"
+import localFont from "@next/font/local"
 
 // Handle the font family
-const roboto = Roboto({
-  subsets: ["cyrillic"],
-  weight: ["400", "500"],
-  variable: "--font-roboto"
+const poppins = localFont({
+  src: [
+    {
+      path: "../../public/assets/fonts/poppins/Poppins-Regular.ttf",
+      weight: "400"
+    },
+    {
+      path: "../../public/assets/fonts/poppins/Poppins-Bold.ttf",
+      weight: "700"
+    }
+  ],
+  variable: "--font-poppins"
 })
-const noto_arabic = Noto_Sans_Arabic({
-  subsets: ["arabic"],
-  weight: ["300", "400", "500", "600", "700"],
+
+const notoSansArabic = localFont({
+  src: [
+    {
+      path: "../../public/assets/fonts/noto-sans/NotoSansArabic-Regular.ttf",
+      weight: "400"
+    },
+    {
+      path: "../../public/assets/fonts/noto-sans/NotoSansArabic-Bold.ttf",
+      weight: "700"
+    }
+  ],
   variable: "--font-notoSansArabic"
 })
 
@@ -40,8 +57,8 @@ export default function RootLayout({ children, params }: ChildrenLocalProps) {
       <body
         className={
           params.lang.toString() === "ar"
-            ? noto_arabic.className
-            : roboto.className
+            ? notoSansArabic.className
+            : poppins.className
         }
       >
         <main>
