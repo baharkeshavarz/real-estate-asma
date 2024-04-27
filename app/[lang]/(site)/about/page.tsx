@@ -1,14 +1,10 @@
-import LayoutWrapper from "@/components/layouts/layout-wrapper"
 import React from "react"
-import { useTranslations } from "next-intl"
+import About from "@/components/home/about"
 
-const About = () => {
-  const t = useTranslations()
+const AboutUs = () => {
   return (
-    <LayoutWrapper>
-        About
-    </LayoutWrapper>
+        <About/>
   );
 }
 
-export default About;
+export default AboutUs;

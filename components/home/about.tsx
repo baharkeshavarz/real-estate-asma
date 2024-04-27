@@ -9,7 +9,7 @@ import { useTranslations } from "next-intl"
 const About = () => {
   const t = useTranslations()
   return (
-    <div className="container relative mt-16 lg:mt-24">
+    <div className="container relative mt-10 lg:mt-24">
       <div className="grid grid-cols-1 items-center gap-[30px] md:grid-cols-12">
         <div className="md:col-span-5">
           <div className="relative">
@@ -64,9 +64,9 @@ const About = () => {
                 <HiCheck /> {t("pages.about.key5")}
               </li>
             </ul>
-            <div className="mt-4">
+            {/* <div className="mt-4">
               <LinkBtn label={t("general.learnMore")} hrefLink="#" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
