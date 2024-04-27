@@ -68,7 +68,7 @@
     "subscribeBtn": "subscribe"
   },
   "error404": {
-    "backHome": "Back to home",
+    "backHome": "Go Back to Homepage",
     "imageAlt": "404 Error",
     "title": "Oh no... We lost this page",
     "description": " We searched everywhere but couldn’t find what you’re looking for. Let’s find a better place for you to go."
@@ -134,7 +134,16 @@
       "message": "Message",
       "messagePlaceholder": "Your message",
       "response": "We will respond as soon as we receive your message"
+    }, 
+    "services": {
+      "helpTitle": "Need help? Talk to our expert",
+      "helpText": "Talk to our experts or Browse through more properties",
+      "service1": "Invest Without Boundaries",
+      "service1Comment": "We analyze your expectations and make your dream investment a reality with over 30 years of experience in investment markets.",
+      "service2": "Professional Agents",
+      "service2Comment": "Explaining to you the purchasing procedures in details and We do our best to find the enjoyable asset for you.",
+      "service3": "Customer Satisfaction",
+      "service3Comment": "We take you to all the properties you are interested in all aroundthe area and We set up all the details before you get here."
     }
-
   }
 }

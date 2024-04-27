@@ -19,7 +19,7 @@ const Menus = () => {
             key={id}
             className="base-medium cursor-pointer px-4 capitalize text-gray-500 duration-200 hover:scale-105 hover:text-primary-500"
           >
-            <Link href={link}>{t(`navbar.${title}`)}</Link>
+            <Link href={`/${lang}/${link}`}>{t(`navbar.${title}`)}</Link>
           </li>
         ))}
       </ul>
