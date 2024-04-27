@@ -23,7 +23,7 @@ const ErrorPage = () => {
 
         <Link
           className="flex-center body-regular min-h-[52px] w-64 rounded-md bg-primary-500
-                     px-2 py-2 text-base text-white transition-all duration-500 ease-in-out hover:bg-primary-900"
+                     px-2 py-2 text-base text-secondary-800 transition-all duration-500 ease-in-out hover:bg-primary-900"
           href="/"
         >
           {t("error404.backHome")}
