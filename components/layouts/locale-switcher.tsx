@@ -20,6 +20,7 @@ const LocaleSwitcher = ({ classes }: LocaleSwitcherProps) => {
     if (!pathName) return "/"
     const segments = pathName.split("/")
     segments[1] = locale
+    setSelectedLang(locale)
     router.push(segments.join("/"))
   }
 
@@ -46,14 +47,15 @@ const LocaleSwitcher = ({ classes }: LocaleSwitcherProps) => {
   return (
     <div className={`flex-center mx-1 h-full ${classes}`}>
       <HiOutlineGlobeAlt size={20} />
-      <select className="flex-start body-regular rounded-md bg-white p-1">
+      <select
+        value={selectedLang}
+        onChange={(e) => {
+           redirectToLanguage(e.target.value);
+        }}
+        className="flex-start body-regular rounded-md bg-white p-1"
+      >
         {supportedLanguages.map(locale => (
-          <option
-            key={locale}
-            value={selectedLang}
-            onClick={() => redirectToLanguage(locale)}
-            className="gap-y-1"
-          >
+          <option key={locale} value={locale} className="gap-y-1">
             {LangInfo(locale)}
           </option>
         ))}
